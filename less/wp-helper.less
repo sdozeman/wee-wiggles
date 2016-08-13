@@ -1,0 +1,25 @@
+// Clutter Removal
+#wp-admin-bar-lmm,
+#wp-admin-bar-comments,
+#wp-admin-bar-new-content,
+#wp-admin-bar-wpseo-menu { display: none; }
+
+@wpa-bp:  ~"only screen and (max-width: 781px)";
+
+
+// Fixed Header Adjustments
+body.admin-bar {
+  header.site-header {
+    top: 32px;
+  }//.site-header
+
+  @media @tablet, @mobile-lg, @mobile {
+    header.site-header {}//.site-header
+
+    #wpadminbar {}//#wpadminbar
+  }//@tablet
+
+  @media @wpa-bp {
+    .site-header { top: 46px !important; }
+  }//@wpa-bp
+}//.admin-bar

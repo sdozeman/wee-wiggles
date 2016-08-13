@@ -1,0 +1,104 @@
+/////// CSS GRID ///////
+
+// gutter/padding amount
+@gpad: 35px;
+
+.grid {
+  .clearfix;
+  .plain-list;
+  overflow: hidden;
+  margin: 0 0 @gpad 0;
+
+
+    [class*='col-'] {
+      float: left;
+      padding-right: @gpad;
+
+        .grid &:last-of-type {
+          padding-right: 0;
+        }//last-col
+
+        @media @mobile { width: 100% !important; }
+    }// cols
+}
+
+
+.col-12 { width: 100%; }//     12/12
+.col-11 { width: 91.66%; }//   11/12
+.col-10 { width: 83.33%; }//   10/12
+.col-9 { width: 75%; }//       9/12
+.col-8 { width: 66.66%; }//    8/12
+.col-7 { width: 58.33%; }//    7/12
+.col-6 { width: 50%; }//       6/12
+.col-5 { width: 41.66%; }//    5/12
+.col-4 { width: 33.33%; }//    4/12
+.col-3 { width: 25%; }//       3/12
+.col-2 { width: 16.66% ; }//   2/12
+.col-1 { width: 8.33%; }//     1/12
+
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: @gpad 0 @gpad @gpad;
+
+    [class*='col-']:last-of-type {
+      padding-right: @gpad;
+    }
+}
+.grid-pull { margin: -@gpad; }
+
+
+
+/////// FLEXBOX GRID ///////
+.fgrid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+    &.fgrid-visible { overflow: visible; }
+}
+
+.fgrid-cell {
+  padding: 0;
+  float: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  flex-direction: row;
+  -ms-flex-negative: 1;
+
+    &.no-basis { flex-basis: auto; }
+    &.col-11 { flex-basis: 91.66%; }//   11/12
+    &.col-10 { flex-basis: 83.33%; }//   10/12
+    &.col-9 { flex-basis: 75%; }//    9/12
+    &.col-8 { flex-basis: 66.66%; }//    8/12
+    &.col-7 { flex-basis: 58.33%; }//    7/12
+    &.col-6 { flex-basis: 50%; }//       6/12
+    &.col-5 { flex-basis: 41.66%; }//    5/12
+    &.col-4 { flex-basis: 33.33%; }//    4/12
+    &.col-3 { flex-basis: 25%; }//       3/12
+    &.col-20 { flex-basis: 20%; }//      ??
+    &.col-2 { flex-basis: 16.66%; }//    2/12
+    &.col-1 { flex-basis: 8.33%; }//     1/12
+
+    @media @mobile-lg, @mobile {
+      &[class*='col-'] { flex-basis: 100%; }
+    }
+}//.fgrid-cell
+
+/* With gutters */
+.fgrid--gutters { margin: -@gpad 0 0 -@gpad; }
+.fgrid--gutters > .fgrid-cell { padding-top: @gpad; }
+.fgrid--gutters > .fgrid-cell > .flex-wrap { height: 100%; padding: 0 5px 0 @gpad; }
+.fgrid--gutters > .fgrid-cell > .flex-wrap.bot { padding-bottom: 5px; }
+.fgrid--gutters > .fgrid-cell > .flex-wrap.top-bot { padding-top: 12px; padding-bottom: 5px; }
+
+/* Alignment per row */
+.fgrid--top { align-items: flex-start; }
+.fgrid--bottom { align-items: flex-end; }
+.fgrid--center { align-items: center; }
+
+/* Alignment per cell */
+.fgrid-cell--top { align-self: flex-start; }
+.fgrid-cell--bottom { align-self: flex-end; }
+.fgrid-cell--center { align-self: center; }

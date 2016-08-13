@@ -1,0 +1,29 @@
+.btn,
+button,
+input[type="submit"] {
+  color: @white;
+  line-height: 1;
+  max-width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 5px 0 0;
+  text-align: center;
+  padding: 15px 25px;
+  letter-spacing: 2px;
+  display: inline-block;
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid @white;
+  text-transform: uppercase;
+  font-size: @font-size-base - 2;
+  font-family: @font-family-base;
+
+    &:hover {
+      background: @red;
+      border-color: @red;
+      text-decoration: none;
+    }//:hover
+
+    &.sml { font-size: @font-size-base - 4; }
+  	&.lrg { font-size: @font-size-base + 2; }
+}//.btn

@@ -1,0 +1,114 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+@main-gray:                   #666;
+@gray-darker:                 #222;
+@gray-dark:                   #333;
+@gray:                        #555;
+@gray-light:                  #999;
+@gray-lighter:                #eee;
+
+
+// Brand Colors
+// -------------------------
+@cyan:                        #2bb9ba; // normal cyan
+@cyan2:                       #86cfc0; // light cyan
+@purple:                      #dc8ebd; // purple
+@purple2:                     #c272af; // dark purple
+@red:                         #f16161; // red
+@red2:                        #f58c88; // light red
+
+@header-color:                #252525;
+@footer-color:                @header-color;
+
+@black:				                #111;
+@white:				                #fff;
+
+// Scaffolding
+// -------------------------
+@body-bg:                     #cffff5;
+@text-color:                  #252525;
+
+@trans-speed:			            .25s;
+
+@container-main:		          1240px;
+@container-small:		           1000px;
+@container-narrow:		        800px;
+
+@off-canvas-width:		        385px;
+
+// Links
+// -------------------------
+@link-color:                  @purple;
+
+// Typography
+// -------------------------
+@font-family-base:            'Lato', arial, sans-serif;
+@font-family-headings:        'aleoregular', times, serif;
+
+
+@font-size-base:              16px;
+@line-height:        	        1.4;
+
+@font-size-h1:                36px;
+@font-size-h2:                28px;
+@font-size-h3:                24px;
+@font-size-h4:                20px;
+@font-size-h5:                16px;
+@font-size-h6:                16px;
+
+@headings-font-weight:        700;
+@headings-line-height:        1.1;
+@headings-color:              @purple;
+
+// Components
+// -------------------------
+@padding-base:                20px;
+@padding-large:               50px;
+@padding-small:               10px;
+
+
+
+// Forms
+// -------------------------
+@input-bg:                    #fff;
+@input-bg-disabled:           @gray-lighter;
+
+@input-color:                 @text-color;
+@input-border:                @gray-light;
+
+@input-border-focus:          #66afe9;
+
+@input-color-placeholder:     @gray-light;
+@input-font-size:             16px;
+
+@input-height:                34px;
+@input-padding:               8px;
+
+
+
+// Z-index master list
+@zindex-base:                 500;
+
+
+// Media queries breakpoints
+// --------------------------------------------------
+// Breakpoints
+// -------------------------
+//Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity:                 ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+                              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+                              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+                              ~"only screen and (min-device-pixel-ratio: 1.5)";
+
+
+@mobile:                      ~"only screen and (max-width: 529px)";
+@mobile-lg:                   ~"only screen and (min-width: 530px) and (max-width: 767px)";
+@tablet:                      ~"only screen and (min-width: 768px) and (max-width: 1023px)";
+@testinonial-break:           ~"only screen and (max-width: 1040px)";
+@desktop-sml:                 ~"only screen and (min-width: 1024px) and (max-width: 1199px)";
+@desktop:                     ~"only screen and (min-width: 1200px)";
+@desktop-lg:                  ~"only screen and (min-width: 144px)";

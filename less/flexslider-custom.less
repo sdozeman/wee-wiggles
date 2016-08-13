@@ -1,0 +1,70 @@
+.flexslider {
+  border: 0;
+  height: 100%;
+  .rounded-corners(0);
+
+    .slides {
+      height: 100%;
+
+       li {
+         height: 100%;
+         background: rgba(255, 0, 0, .25) !important;
+
+          &:nth-of-type(2n+1){ background: rgba(0, 255, 0, .25) !important; }
+          &:nth-of-type(3n+1){ background: rgba(0, 0, 255, .25) !important; }
+
+          > .container {
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+              .caption {
+                width: 50%;
+
+                  p {
+                    &.headline {
+                      color: @purple;
+                      font-size: 60px;
+                      line-height: 100%;
+                      font-family: @font-family-headings;
+
+                      &.sub {
+                        color: @white;
+                        font-size: 48px;
+                        font-family: @font-family-base;
+                      }//.sub
+
+                      &.main {
+                        position: relative;
+                        padding-bottom: 58px;
+
+                          &:after {
+                            left: 50%;
+                            content: "";
+                            height: 8px;
+                            width: 104px;
+                            bottom: 22px;
+                            display: block;
+                            .translateX(-50%);
+                            position: absolute;
+                            background: url(img/squiggle@2x.png) 0 0 no-repeat;
+                            background-size: 104px 8px;
+                          }//:after
+                      }//.main
+                    }//.headline
+                  }//p
+
+                  .btn { margin-right: 0; .translateX(5px); }
+
+                  &.center { margin: 0 auto; }
+                  &.right { margin-left: auto; }
+                  &.left { margin-right: auto; }
+              }//.caption
+          }//.container
+       }//li
+    }//.slides
+}//.flexslider
