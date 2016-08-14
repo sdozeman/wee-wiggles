@@ -1,1 +1,1 @@
-jQuery(document).ready(function($){$(".flexslider").flexslider({animation:"fade"})});
+jQuery(document).ready(function($){$(".flexslider").flexslider({animation:"fade"}),$(window).on("scroll touchmove",function(){$(".site-header").toggleClass("scrolled",$(document).scrollTop()>100)}).scroll()});

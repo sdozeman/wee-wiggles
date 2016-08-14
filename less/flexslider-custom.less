@@ -12,6 +12,7 @@
 
           &:nth-of-type(2n+1){ background: rgba(0, 255, 0, .25) !important; }
           &:nth-of-type(3n+1){ background: rgba(0, 0, 255, .25) !important; }
+          &:nth-of-type(4n+1){ background: rgba(128, 0, 128, .25) !important; }
 
           > .container {
             height: 100%;
@@ -67,4 +68,19 @@
           }//.container
        }//li
     }//.slides
+
+    .flex-direction-nav {
+      li {
+        a {
+          .hide-text;
+          width: 66px;
+          height: 66px;
+          background: url(img/hero-controls@2x.png) 0 0 no-repeat;
+          background-size: 132px 66px;
+            &:before { display: none; }
+        }//a
+
+        &.flex-nav-next a { background-position: -66px 0; }//.flex-nav-prev a:after
+      }//li
+    }//.flex-direction-nav
 }//.flexslider

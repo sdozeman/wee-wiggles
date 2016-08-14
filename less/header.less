@@ -1,6 +1,7 @@
 //--------------------
 // HEADER STYLES
 //--------------------
+@import "navigation.less";
 
 header.site-header {
 	left: 0;
@@ -23,8 +24,9 @@ header.site-header {
 			height: 115px;
 			display: block;
 			padding-top: 31px;
+			.transition(all @trans-speed ease);
 			background: url(img/ww-logo@2x.png) left bottom no-repeat;
-			background-size: 261px 84px;
+			background-size: 100% auto;
 
 				> a {
 					.hide-text;
@@ -36,7 +38,33 @@ header.site-header {
 
 		.menu-btn { display: none; }
 
-		&.scrolled { background: @white; .box-shadow(0 0 20px rgba(0, 0, 0, 0.15)); }
+		&.scrolled {
+			height: 70px;
+			.box-shadow(0 0 20px rgba(0, 0, 0, 0.15));
+
+				> .container { min-height: 70px; }
+
+				.logo {
+					width: 160px;
+					height: 62px;
+					padding-top: 10px;
+					background-size: 100% auto;
+				}//.logo
+
+
+				nav.main-navigation {
+					ul {
+						> li {
+							a {
+								padding: 15px 20px;
+
+									&:before,
+									&:after { .opacity(0); }
+							}
+						}
+					}
+				}
+		}//.scrolled
 
 
 
@@ -104,7 +132,6 @@ header.site-header {
 
 						&:hover { text-decoration: none; }
 				}//end .menu-btn
-
 		}//@mobile
 
 }//end header.site-header

@@ -76,6 +76,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/cta-bg-repeat.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3913,
+		"inputAbbreviatedPath": "\/img\/cta-bg-repeat.png",
+		"outputAbbreviatedPath": "\/img\/cta-bg-repeat.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/footer-bg-repeat@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -138,6 +149,28 @@
 		"initialSize": 105260,
 		"inputAbbreviatedPath": "\/img\/main-sprite@2x.png",
 		"outputAbbreviatedPath": "\/img\/main-sprite@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/shape-1bg-repeater@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/shape-1bg-repeater@2x.png",
+		"outputAbbreviatedPath": "\/img\/shape-1bg-repeater@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/shape-2bg-repeater@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/shape-2bg-repeater@2x.png",
+		"outputAbbreviatedPath": "\/img\/shape-2bg-repeater@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

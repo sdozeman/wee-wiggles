@@ -476,3 +476,23 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+
+
+  &.squiggle {
+    position: relative;
+    padding-bottom: 50px;
+
+      &:after {
+        left: 50%;
+        content: "";
+        height: 8px;
+        width: 104px;
+        bottom: 22px;
+        display: block;
+        .translateX(-50%);
+        position: absolute;
+        background: url(img/squiggle@2x.png) 0 0 no-repeat;
+        background-size: 104px 8px;
+      }//:after
+  }//.main
