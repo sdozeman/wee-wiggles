@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section id="home-hero">
+			<section id="h-hero">
 				<div class="flexslider">
 				  <ul class="slides">
 				    <li style="background: url(//placehold.it/350x150) center center no-repeat; background-size: cover;">
@@ -80,7 +80,7 @@ get_header(); ?>
 			</section><!-- .cta -->
 
 
-			<section id="home-about">
+			<section id="h-about">
 				<div class="container">
 					<span>Welcome to</span>
 					<h1 class="squiggle">Wee Wiggles</h1>
@@ -97,9 +97,75 @@ get_header(); ?>
 				</div><!-- .container -->
 			</section><!-- #home-about -->
 
-			<section id="home-avail">
-
+			<section id="h-avail">
 			</section><!-- #home-avail -->
+
+
+			<section id="h-bio">
+			</section><!-- .section -->
+
+			<section id="h-rates">
+			</section><!-- .section -->
+
+			<section id="h-schedule">
+			</section><!-- .section -->
+
+			<section id="h-menu">
+			</section><!-- .section -->
+
+			<section id="h-gallery">
+			</section><!-- .section -->
+
+			<section id="h-contact">
+				<div class="container slim">
+					<h2 class="squiggle">Contact</h2>
+						<div class="grid">
+							<div class="col-4 ico phone">
+								<p>Phone</p>
+								<small>403-200-2059</small>
+							</div><!-- ico -->
+
+							<div class="col-4 ico email">
+								<p>Email</p>
+								<small>hello@weewigglesinc.com</small>
+							</div><!-- ico -->
+
+							<div class="col-4 ico clock">
+								<p>Hours</p>
+								<small>Monday-Friday<br>7:30am-5:00pm</small>
+							</div><!-- ico -->
+						</div><!-- .grid -->
+
+						<form id="contact-form" class="FlowupLabels" action="">
+							<div class="grid grid-pad grid-pull">
+								<div class="col-6">
+									<div class="fl_wrap">
+										<label class="fl_label required" for="c_name">Your name</label>
+										<input type="text" class="fl_input" id="c-name" class="required">
+									</div><!-- .fl_wrap -->
+									<div class="fl_wrap">
+										<label class="fl_label required" for="c_email">Your e-mail</label>
+										<input type="text" class="fl_input" id="c-email" class="required">
+									</div><!-- .fl_wrap -->
+									<div class="fl_wrap">
+										<label class="fl_label required" for="c_subject">Subject</label>
+										<input type="text" class="fl_input" id="c-subject">
+									</div><!-- .fl_wrap -->
+								</div><!-- .col-6 -->
+
+								<div class="col-6">
+									<div class="fl_wrap">
+										<label class="fl_label required" for="c-mess">Message</label>
+										<textarea id="c-mess" class="fl_input"></textarea>
+									</div><!-- fl_wrap -->
+								</div><!-- .col-6 -->
+							</div><!-- .grid -->
+
+							<button type="submit" class="btn red">Send Message</button>
+						</form><!-- #contact-form -->
+
+				</div><!-- .container -->
+			</section><!-- .section -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

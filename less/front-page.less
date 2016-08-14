@@ -9,9 +9,10 @@
   margin-bottom: 300px;
   .box-shadow(0 0 20px rgba(0, 0, 0, 0.15));
 
+  section { min-height: 100px; }
 
 // Hero Section
-  #home-hero {
+  #h-hero {
     height: 650px;
     overflow: hidden;
     position: relative;
@@ -24,6 +25,7 @@
     padding: 35px 0;
     background-color: @purple2;
     background-image: url(img/cta-bg-repeat.png);
+    background-attachment: fixed;
     background-size: 294px 150px;
     background-repeat: repeat;
     background-position: 0 0;
@@ -47,7 +49,7 @@
 
 
 // About Section
-  #home-about {
+  #h-about {
     background: @white;
 
       > .container {
@@ -91,7 +93,7 @@
 
       .block {
         width: 25%;
-        min-width: 260px;
+        min-width: 200px;
         padding-top: 165px;
         position: relative;
         margin: 0 -4px 20px 0;
@@ -123,9 +125,59 @@
 
 
 // Availability Section
-  #home-avail {
+  #h-avail {
     padding: 50px 0;
     background: rgba(255, 0, 0, .25);
   }//#home-avail
+
+
+// Contact Section
+  #h-contact {
+    .clearfix;
+
+      .col-4 {
+        float: left;
+        padding: 20px;
+        width: 33.332%;
+        line-height: 140%;
+        text-align: center;
+        position: relative;
+
+          &.ico {
+            padding-top: 100px;
+
+              &:before {
+                top: 20px;
+                left: 50%;
+                content: "";
+                width: 55px;
+                height: 55px;
+                .translateX(-50%);
+                position: absolute;
+                background: url(img/main-sprite@2x.png) 5px -390px no-repeat;
+                background-size: 843px 450px;
+              }//:before
+
+              &.email:before { background-position: -62px -390px; }
+              &.clock:before { background-position: -127px -390px; }
+          }//.ico
+
+          p {
+            color: @purple;
+            font-size: 24px;
+            margin-bottom: 5px;
+          }
+
+          small {
+            font-size: 14px;
+            color: @main-gray;
+          }//small
+      }//.col-4
+
+      form {
+        text-align: center;
+        margin-bottom: 120px;
+      }//form
+  }//#h-contact
 
 }//.body-content

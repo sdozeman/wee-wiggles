@@ -6,10 +6,12 @@ input[type="submit"] {
   max-width: 100%;
   cursor: pointer;
   font-weight: 600;
+  .box-shadow(none);
   margin: 0 5px 0 0;
   text-align: center;
   padding: 15px 25px;
   letter-spacing: 2px;
+  .rounded-corners(0);
   display: inline-block;
   text-decoration: none;
   background: transparent;
@@ -17,13 +19,23 @@ input[type="submit"] {
   text-transform: uppercase;
   font-size: @font-size-base - 2;
   font-family: @font-family-base;
-
+  .transition(all @trans-speed ease);
+  
     &:hover {
-      background: @red;
-      border-color: @red;
+      background: rgba(241, 97, 97, .6);
       text-decoration: none;
     }//:hover
 
     &.sml { font-size: @font-size-base - 4; }
   	&.lrg { font-size: @font-size-base + 2; }
+    &.red {
+      background: @red;
+      border-color: @red;
+
+        &:hover {
+          .box-shadow(none);
+          background-color: @purple;
+          border-color: @purple;
+        }//:hover
+    }//.red
 }//.btn
