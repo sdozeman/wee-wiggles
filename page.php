@@ -131,7 +131,36 @@ get_header(); ?>
 
 <!-- START AVAILABILITY SECTION -->
 			<section id="h-additional">
+				<div class="container">
 
+
+			<!-- BEGIN FIRST ROW -->
+					<div class="image-row image-right" id="target1">
+						<div class="column text">
+							<span class="sub-headline">Fostering</span>
+							<h2 class="squiggle l-align">early-learning</h2>
+
+							<p>It is my core belief that children should learn through play and discovery.
+								As a teacher, I found class-size to be the biggest indicator of success in my classrooms.
+								As such, I will be keeping my dayhome low-ratio to maximize the amount of time I can spend with each child.
+								I strive to create lifelong learners in a warm, safe,
+								and engaging environment for children to explore their surroundings.</p>
+
+							<p>Every month we will explore a theme to do with the world around us.
+								Every week I will create activities based on the expressed interests from the week before for the children in my care.
+								Every day I will use brightwheel© to report to parents when children are checked in and out, when naps begin and end,
+								daily activities, and the type and amount of food eaten.</p>
+						</div><!-- .column -->
+						<div class="column image right image-1">
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-B@2x.png" class="p-background" />
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-earlylearning@2x.jpg" class="p-image" />
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-F@2x.png" class="p-foreground" />
+						</div><!-- .column -->
+					</div><!-- .image-row -->
+
+
+
+				</div><!-- .container -->
 			</section><!-- h-additional -->
 
 

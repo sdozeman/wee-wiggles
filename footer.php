@@ -12,16 +12,17 @@
 ?>
 
 		</div><!-- #content -->
-	</div><!-- #page -->
+	</div><!-- .site-wrap -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="site-info">
-		<span>Copyright &copy; Wee Wiggles Inc. 2016</span>
-		<a href="#" class="ico fb">Facebook</a>
-		<a href="mailto:fakemail@replaceme.com" class="ico em">Email</a>
-		<a href="#" class="ico te">Telephone</a>
-	</div><!-- .site-info -->
-</footer><!-- #colophon -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<span>Copyright &copy; Wee Wiggles Inc. 2016</span>
+			<a href="#" class="ico fb">Facebook</a>
+			<a href="mailto:fakemail@replaceme.com" class="ico em">Email</a>
+			<a href="#" class="ico te">Telephone</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

@@ -21,38 +21,39 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wee-wiggles' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="container">
-			<span class="site-title logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</span>
-
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
-				<ul>
-					<li><a href="#" class="ico heart">About Us</a></li>
-					<li><a href="#" class="ico star">The Director</a></li>
-					<li><a href="#" class="ico clock">Hours & Rates</a></li>
-					<li><a href="#" class="ico calendar">Daily Schedule</a></li>
-					<li><a href="#" class="ico utensils">Weekly Menu</a></li>
-					<li><a href="#" class="ico camera">Photo Gallery</a></li>
-					<li><a href="#" class="ico envelope">Contact</a></li>
-				</ul>
-			</nav><!-- #site-navigation -->
-
-			<a class="menu-btn">
-				<div class="toggle">
-					<span class="l1"></span>
-					<span class="l1"></span>
-					<span class="l1"></span>
-				</div>
-
-				<span class="menu-text">Menu</span>
-			</a>
-		</div><!-- .container -->
-	</header><!-- #masthead -->
-
 	<div id="page" class="site">
-		<div id="content" class="site-content">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wee-wiggles' ); ?></a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="container">
+				<span class="site-title logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</span>
+
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
+					<ul>
+						<li><a href="#" class="ico heart">About Us</a></li>
+						<li><a href="#" class="ico star">The Director</a></li>
+						<li><a href="#" class="ico clock">Hours & Rates</a></li>
+						<li><a href="#" class="ico calendar">Daily Schedule</a></li>
+						<li><a href="#" class="ico utensils">Weekly Menu</a></li>
+						<li><a href="#" class="ico camera">Photo Gallery</a></li>
+						<li><a href="#" class="ico envelope">Contact</a></li>
+					</ul>
+				</nav><!-- #site-navigation -->
+
+				<a class="menu-btn">
+					<div class="toggle">
+						<span class="l1"></span>
+						<span class="l1"></span>
+						<span class="l1"></span>
+					</div>
+
+					<span class="menu-text">Menu</span>
+				</a>
+			</div><!-- .container -->
+		</header><!-- #masthead -->
+
+		<div class="site-wrap">
+			<div id="content" class="site-content">

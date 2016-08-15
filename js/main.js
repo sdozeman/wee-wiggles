@@ -18,7 +18,29 @@ jQuery(document).ready(function($){
 });
 
 
+// Scroll Magic
+jQuery(function(){
+  var controller = new ScrollMagic.Controller();
 
+  var ibg1 = TweenMax.to('.image-1 .p-background', 1, { top: 0, ease: Linear.easeNone});
+  var ifg1 = TweenMax.to('.image-1 .p-foreground', 1, { top: 0, ease: Linear.easeNone});
+
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 500})
+      .setTween(ibg1)
+      .addTo(controller);
+
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 500})
+      .setTween(ifg1)
+      .addTo(controller);
+
+  //var scene3 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 500})
+  //    .setTween(".text.first", {top: -375})
+  //    .addTo(controller);
+
+});
+
+
+// Fancy Labels
 (function($) {
 	$.fn.FlowupLabels = function( options ){
 

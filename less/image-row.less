@@ -1,0 +1,63 @@
+// Paralaxing image row styles
+.image-row {
+  padding: 50px 0;
+  display: flex;
+  margin: 0 -30px;
+  flex-wrap: nowrap;
+  min-height: 320px;
+  justify-content: center;
+
+    &.image-right {
+      .column.image { order: 1; }
+      .column.text { order: 0; }
+    }//.image-right
+
+    &.image-left {
+      .column.image { order: 0; }
+      .column.text { order: 1; }
+    }//.image-left
+
+    .column {
+      order: 0;
+      padding: 0;
+      float: none;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 50%;
+      padding: 0 35px;
+      position: relative;
+      flex-direction: row;
+      -ms-flex-negative: 1;
+
+        &.image {
+          img {
+            margin: 0;
+            position: absolute;
+            display: inline-block;
+
+              &.p-image { z-index: 20; max-width: 505px; }//.p-image
+              &.p-background { z-index: 0; max-width: 705px; }
+              &.p-foreground { z-index: 40; }
+            }//img
+
+            &.image-1 {
+              img {
+                &.p-image { right: 0; top: 40px; }
+                &.p-background { left: 0; top: -80px; }
+                &.p-foreground { left: 105px; top: 80px; }
+              }//img
+            }//&.image-1
+        }//.image
+
+
+        &.text {
+          font-size: 18px;
+          text-align: left;
+
+            .sub-headline {
+              display: block;
+              font-size: 30px;
+            }//.sub-headline
+        }//.text
+    }//.column
+}//.image-row
