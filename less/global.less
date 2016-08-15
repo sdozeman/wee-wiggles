@@ -479,21 +479,30 @@ img.mfp-img {
 
 
 
-  &.squiggle {
-    text-align: center;
-    position: relative;
-    padding-bottom: 50px;
+.squiggle {
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
 
-      &:after {
-        left: 50%;
-        content: "";
-        height: 8px;
-        width: 104px;
-        bottom: 22px;
-        display: block;
-        .translateX(-50%);
-        position: absolute;
-        background: url(img/squiggle@2x.png) 0 0 no-repeat;
-        background-size: 104px 8px;
-      }//:after
-  }//.main
+    &:after {
+      left: 50%;
+      content: "";
+      height: 8px;
+      width: 104px;
+      bottom: 22px;
+      display: block;
+      .translateX(-50%);
+      position: absolute;
+      background: url(img/squiggle@2x.png) 0 0 no-repeat;
+      background-size: 104px 8px;
+    }//:after
+
+    &.l-align {
+      text-align: left;
+
+        &:after {
+          left: 0;
+          .translateX(0);
+        }//:after
+    }//.l-align
+}//.squiggle

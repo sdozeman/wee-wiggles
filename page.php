@@ -17,6 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+<!-- START HERO SECTION -->
 			<section id="h-hero">
 				<div class="flexslider">
 				  <ul class="slides">
@@ -60,6 +61,8 @@ get_header(); ?>
 				</div><!-- .flexslider -->
 			</section><!-- #home-hero -->
 
+
+<!-- START CALL TO ACTION SECTION -->
 			<section class="cta">
 				<div class="container">
 					<div class="fgrid fgrid--gutters c-align">
@@ -80,6 +83,7 @@ get_header(); ?>
 			</section><!-- .cta -->
 
 
+<!-- START ABOUT SECTION -->
 			<section id="h-about">
 				<div class="container">
 					<span>Welcome to</span>
@@ -97,25 +101,75 @@ get_header(); ?>
 				</div><!-- .container -->
 			</section><!-- #home-about -->
 
+
+<!-- START AVAILABILITY SECTION -->
 			<section id="h-avail">
+				<div class="fgrid fgrid--gutters">
+					<div class="fgrid-cell col-5">
+						<div class="flex-wrap" style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/about-availability.jpg) center center no-repeat; background-size: cover;">
+						</div><!-- .flex-wrap -->
+					</div><!-- .col-4 -->
+
+					<div class="fgrid-cell col-7 availability">
+						<div class="flex-wrap">
+							<div class="container xsml">
+								<span class="avail-range">2016/2017</span>
+								<h2 class="squiggle l-align">Availability</h2>
+								<p>I operate Wee Wiggles Inc. from the end of August to the end of June (corresponding to the CBE traditional calendar—ideal for teachers’ families!).
+									I do not charge fees to hold spots over the summer like other dayhomes, as I take summers off.</p>
+								<p>Wee Wiggles Inc. currently has <strong>two full-time spots available for children aged 2-3 for the 2016/2017 school year</strong>.
+									I cannot provide care for school-aged children, as I currently do not offer drop off/pick-up services.
+									When the new Education Act is in effect, I will be able to care for children up to age 5. See below for when the new regulations are expected to take effect.</p>
+
+								<blockquote>
+									“Under our current School Act regulations, children must be at least four years old on or before March 1 to start kindergarten in September of the same calendar year.<br><br>
+									*Please note: The new Education Act was expected to take effect in the 2016-17 school year, but has been delayed by Alberta Education.
+									The new regulation states that starting in the 2018-19 school year, children must be at least five years old by Dec. 31, 2018 to start kindergarten in September 2018.
+									Our kindergarten calculator assumes that the Education Act will be in effect for the 2018-19 school year.”
+
+									<span class="source">via <a href="#">Calgary Board of Education</a>
+								</blockquote>
+
+								<p>Please <a href="#">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
+							</div><!-- .container -->
+						</div><!-- .flex-wrap -->
+					</div><!-- .col-8 -->
+				</div><!-- .fgrid -->
 			</section><!-- #home-avail -->
 
 
+<!-- START AVAILABILITY SECTION -->
+			<section id="h-additional">
+
+			</section><!-- h-additional -->
+
+
+<!-- START BIO SECTION -->
 			<section id="h-bio">
 			</section><!-- .section -->
 
+
+<!-- START RATEs SECTION -->
 			<section id="h-rates">
 			</section><!-- .section -->
 
+
+<!-- START SCHEDULE SECTION -->
 			<section id="h-schedule">
 			</section><!-- .section -->
 
+
+<!-- START MENU SECTION -->
 			<section id="h-menu">
 			</section><!-- .section -->
 
+
+<!-- START GALLERY SECTION -->
 			<section id="h-gallery">
 			</section><!-- .section -->
 
+
+<!-- START CONTACT SECTION -->
 			<section id="h-contact">
 				<div class="container slim">
 					<h2 class="squiggle">Contact</h2>
@@ -148,7 +202,7 @@ get_header(); ?>
 										<input type="text" class="fl_input" id="c-email" class="required">
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
-										<label class="fl_label required" for="c_subject">Subject</label>
+										<label class="fl_label" for="c_subject">Subject</label>
 										<input type="text" class="fl_input" id="c-subject">
 									</div><!-- .fl_wrap -->
 								</div><!-- .col-6 -->

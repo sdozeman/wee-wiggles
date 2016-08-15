@@ -126,8 +126,65 @@
 
 // Availability Section
   #h-avail {
-    padding: 50px 0;
-    background: rgba(255, 0, 0, .25);
+    overflow: hidden;
+    background-color: #b9e8de;
+
+      .container.xsml {
+        .clearfix;
+        float: left;
+        padding-top: 50px;
+        padding-left: 80px;
+        padding-bottom: 50px;
+      }//.xsml
+
+      .availability {
+        .avail-range {
+          display: block;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }//.avail-range
+
+        p { font-size: 18px; }
+
+
+        blockquote {
+          padding: 20px;
+          position: relative;
+          padding-left: 120px;
+          margin-left: -100px;
+          background: #8cdccc;
+          margin-bottom: 40px;
+
+            &:before {
+              top: 28px;
+              content:"";
+              left: 58px;
+              width: 38px;
+              height: 26px;
+              display: block;
+              position: absolute;
+              background: url(img/blockquote@2x.png) 0 0 no-repeat;
+              background-size: 38px 26px;
+            }//:before
+
+            &:after {
+              top: 0;
+              bottom: 0;
+              left: 100%;
+              content: "";
+              width: 3000px;
+              display: block;
+              position: absolute;
+              background: #8cdccc;
+            }//:after
+
+            span.source {
+              display: block;
+              margin-top: 10px;
+              text-align: right;
+            }//.source
+        }//blockquote
+      }//.availability
   }//#home-avail
 
 

@@ -630,7 +630,7 @@ object {
 }
 body {
   font-size: 100%;
-  color: #252525;
+  color: #666;
   background: #cffff5;
   font: normal 16px/1.4 'Lato', arial, sans-serif;
 }
@@ -708,7 +708,7 @@ dd {
 }
 hr {
   border: 0;
-  border-bottom: 1px solid #252525;
+  border-bottom: 1px solid #666;
   height: 0px;
   margin: 20px 0;
   padding: 0;
@@ -1236,6 +1236,15 @@ img.mfp-img {
   background: url(img/squiggle@2x.png) 0 0 no-repeat;
   background-size: 104px 8px;
 }
+.squiggle.l-align {
+  text-align: left;
+}
+.squiggle.l-align:after {
+  left: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
 label {
   display: block;
   margin-bottom: 5px;
@@ -1421,7 +1430,7 @@ input[type="button"] {
   -moz-transition: all .10s linear;
   -transition: all .10s linear;
 }
-.FlowupLabels .fl_label:after {
+.FlowupLabels .fl_label.required:after {
   content: "*";
   font-size: 18px;
   color: #666;
@@ -1457,16 +1466,16 @@ input[type="button"] {
   left: 15px;
   font-size: 12px;
 }
-.FlowupLabels .fl_wrap.focused .fl_label:after,
-.FlowupLabels .fl_wrap.populated .fl_label:after,
-.no-js .FlowupLabels .fl_label:after {
+.FlowupLabels .fl_wrap.focused .fl_label.required:after,
+.FlowupLabels .fl_wrap.populated .fl_label.required:after,
+.no-js .FlowupLabels .fl_label.required:after {
   font-size: 12px;
 }
 .FlowupLabels .fl_wrap.focused .fl_label {
   /* Can change */
   color: #dc8ebd;
 }
-.FlowupLabels .fl_wrap.focused .fl_label:after {
+.FlowupLabels .fl_wrap.focused .fl_label.required:after {
   color: #dc8ebd;
 }
 nav.main-navigation {
@@ -1540,11 +1549,14 @@ nav.main-navigation ul > li a:hover {
 }
 nav.main-navigation ul > li a.ico:before,
 nav.main-navigation ul > li a.ico:after {
-  top: 50%;
+  top: 20px;
   left: 50%;
   content: "";
   width: 50px;
   height: 50px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1553,9 +1565,6 @@ nav.main-navigation ul > li a.ico:after {
   -ms-transition: all all 0.25s ease ease;
   -o-transition: all all 0.25s ease ease;
   transition: all all 0.25s ease ease;
-  -webkit-transform: translateX(-50%) translateY(-85%);
-  -ms-transform: translateX(-50%) translateY(-85%);
-  transform: translateX(-50%) translateY(-85%);
   background: url(img/main-sprite@2x.png) 9px 9px no-repeat;
   background-size: 843px 450px;
 }
@@ -1717,6 +1726,8 @@ header.site-header.scrolled nav.main-navigation ul > li a {
 }
 header.site-header.scrolled nav.main-navigation ul > li a:before,
 header.site-header.scrolled nav.main-navigation ul > li a:after {
+  height: 0;
+  top: -10px;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -1837,8 +1848,29 @@ footer .site-info .ico {
   -webkit-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
+  position: relative;
   display: inline-block;
   vertical-align: middle;
+  background: url(img/social-sprite@2x.png) 0 0 no-repeat;
+  background-size: 77px 51px;
+}
+footer .site-info .ico:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  -webkit-transition: all opacity 0.25s ease ease;
+  -moz-transition: all opacity 0.25s ease ease;
+  -ms-transition: all opacity 0.25s ease ease;
+  -o-transition: all opacity 0.25s ease ease;
+  transition: all opacity 0.25s ease ease;
   background: url(img/social-sprite@2x.png) 0 0 no-repeat;
   background-size: 77px 51px;
 }
@@ -1851,6 +1883,20 @@ footer .site-info .ico.fb {
 }
 footer .site-info .ico.em {
   background-position: -51px 0;
+}
+footer .site-info .ico.te:after {
+  background-position: 0 -26px;
+}
+footer .site-info .ico.fb:after {
+  background-position: -30px -26px;
+  width: 16px;
+}
+footer .site-info .ico.em:after {
+  background-position: -51px -26px;
+}
+footer .site-info .ico:hover:after {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 footer .site-info span {
   margin-right: 20px;
@@ -1978,8 +2024,76 @@ footer .site-info span {
   color: #666;
 }
 .site-content #h-avail {
-  padding: 50px 0;
-  background: rgba(255, 0, 0, 0.25);
+  overflow: hidden;
+  background-color: #b9e8de;
+}
+.site-content #h-avail .container.xsml {
+  float: left;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+.site-content #h-avail .container.xsml:before,
+.site-content #h-avail .container.xsml:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.site-content #h-avail .container.xsml:after {
+  clear: both;
+}
+.site-content #h-avail .container.xsml:before,
+.site-content #h-avail .container.xsml:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.site-content #h-avail .container.xsml:after {
+  clear: both;
+}
+.site-content #h-avail .availability .avail-range {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.site-content #h-avail .availability p {
+  font-size: 18px;
+}
+.site-content #h-avail .availability blockquote {
+  padding: 20px;
+  position: relative;
+  padding-left: 120px;
+  margin-left: -100px;
+  background: #8cdccc;
+  margin-bottom: 40px;
+}
+.site-content #h-avail .availability blockquote:before {
+  top: 28px;
+  content: "";
+  left: 58px;
+  width: 38px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  background: url(img/blockquote@2x.png) 0 0 no-repeat;
+  background-size: 38px 26px;
+}
+.site-content #h-avail .availability blockquote:after {
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  content: "";
+  width: 3000px;
+  display: block;
+  position: absolute;
+  background: #8cdccc;
+}
+.site-content #h-avail .availability blockquote span.source {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
 }
 .site-content #h-contact:before,
 .site-content #h-contact:after {
@@ -2199,7 +2313,7 @@ footer .site-info span {
 }
 .fgrid--gutters > .fgrid-cell > .flex-wrap {
   height: 100%;
-  padding: 0 5px 0 20px;
+  padding: 0 0 0 20px;
 }
 .fgrid--gutters > .fgrid-cell > .flex-wrap.bot {
   padding-bottom: 5px;
@@ -2766,4 +2880,7 @@ body.admin-bar header.site-header {
 }
 .container.slim {
   max-width: 1070px;
+}
+.container.xsml {
+  max-width: 770px;
 }

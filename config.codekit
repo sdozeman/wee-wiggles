@@ -65,6 +65,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/about-availability.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07146e+06,
+		"inputAbbreviatedPath": "\/img\/about-availability.jpg",
+		"outputAbbreviatedPath": "\/img\/about-availability.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/blockquote@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

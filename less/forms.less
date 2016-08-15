@@ -158,14 +158,14 @@ input[type="submit"], input[type="button"]{
      -moz-transition: all .10s linear;
          -transition: all .10s linear;
 
-    &:after {
+    &.required:after {
       content: "*";
       font-size: 18px;
       color: @main-gray;
       vertical-align: top;
       display: inline-block;
       .transition(all .10s ease);
-    }//:after
+    }
 }//.fl_label
 
 .FlowupLabels .fl_input {
@@ -190,11 +190,11 @@ input[type="submit"], input[type="button"]{
   left: 15px;
   font-size: 12px;
 
-    &:after { font-size: 12px; }//:after
+    &.required:after { font-size: 12px; }//:after
 }
 .FlowupLabels .fl_wrap.focused .fl_label {
   /* Can change */
   color: @purple;
 
-    &:after { color: @purple; }//:after
+    &.required:after { color: @purple; }//:after
 }
