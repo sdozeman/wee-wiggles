@@ -21,7 +21,7 @@ get_header(); ?>
 			<section id="h-hero">
 				<div class="flexslider">
 				  <ul class="slides">
-				    <li style="background: url(//placehold.it/350x150) center center no-repeat; background-size: cover;">
+				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
 									<p class="sub headline">Learn Through</p>
@@ -30,27 +30,18 @@ get_header(); ?>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
-						<li style="background: url(//placehold.it/350x150) center center no-repeat; background-size: cover;">
+						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center top no-repeat; background-size: cover;">
+							<div class="container">
+								<div class="caption right">
+									<p class="sub headline">Learn Through</p>
+									<p class="main headline">play & discovery</p>
+										<a href="#" class="btn trans caret-r">Learn More</a>
+								</div><!-- .caption -->
+							</div><!-- .container -->
+				    </li>
+						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption left">
-									<p class="sub headline">Learn Through</p>
-									<p class="main headline">play & discovery</p>
-										<a href="#" class="btn trans caret-r">Learn More</a>
-								</div><!-- .caption -->
-							</div><!-- .container -->
-				    </li>
-						<li style="background: url(//placehold.it/350x150) center center no-repeat; background-size: cover;">
-							<div class="container">
-								<div class="caption right">
-									<p class="sub headline">Learn Through</p>
-									<p class="main headline">play & discovery</p>
-										<a href="#" class="btn trans caret-r">Learn More</a>
-								</div><!-- .caption -->
-							</div><!-- .container -->
-				    </li>
-						<li style="background: url(//placehold.it/350x150) center center no-repeat; background-size: cover;">
-							<div class="container">
-								<div class="caption center">
 									<p class="sub headline">Learn Through</p>
 									<p class="main headline">play & discovery</p>
 										<a href="#" class="btn trans caret-r">Learn More</a>
@@ -73,12 +64,12 @@ get_header(); ?>
 							</div><!-- .flex-wrap -->
 						</div><!-- .fgrid-cell -->
 
-					<!-- 2 COL GRID INSERT -->
-					<div class="fgrid-cell col-4">
-						<div class="flex-wrap r-align c-align r-height">
-							<a href="#" class="btn lrg trans caret-r">Contact Us</a>
-						</div><!-- .flex-wrap -->
-					</div><!-- .fgrid-cell -->
+						<div class="fgrid-cell col-4">
+							<div class="flex-wrap r-align c-align r-height">
+								<a href="#" class="btn lrg trans caret-r">Contact Us</a>
+							</div><!-- .flex-wrap -->
+						</div><!-- .fgrid-cell -->
+					</div><!-- .fgrid-->
 				</div><!-- .container -->
 			</section><!-- .cta -->
 
@@ -127,7 +118,7 @@ get_header(); ?>
 									The new regulation states that starting in the 2018-19 school year, children must be at least five years old by Dec. 31, 2018 to start kindergarten in September 2018.
 									Our kindergarten calculator assumes that the Education Act will be in effect for the 2018-19 school year.”
 
-									<span class="source">via <a href="#">Calgary Board of Education</a>
+									<span class="source">via <a href="#">Calgary Board of Education</a></span>
 								</blockquote>
 
 								<p>Please <a href="#">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
@@ -195,11 +186,11 @@ get_header(); ?>
 								<div class="col-6">
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_name">Your name</label>
-										<input type="text" class="fl_input" id="c-name" class="required">
+										<input type="text" class="fl_input required" id="c-name">
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_email">Your e-mail</label>
-										<input type="text" class="fl_input" id="c-email" class="required">
+										<input type="text" class="fl_input required" id="c-email">
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label" for="c_subject">Subject</label>
