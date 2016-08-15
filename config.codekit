@@ -109,6 +109,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/about-02-earlylearning@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 231929,
+		"inputAbbreviatedPath": "\/img\/about-02-earlylearning@2x.jpg",
+		"outputAbbreviatedPath": "\/img\/about-02-earlylearning@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/about-02-F@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

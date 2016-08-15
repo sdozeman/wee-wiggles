@@ -2402,6 +2402,18 @@ footer .site-info span {
   left: 105px;
   top: 80px;
 }
+.image-row .column.image.image-2 img.p-image {
+  left: 0;
+  top: 40px;
+}
+.image-row .column.image.image-2 img.p-background {
+  right: 0;
+  top: -80px;
+}
+.image-row .column.image.image-2 img.p-foreground {
+  right: 105px;
+  top: 80px;
+}
 .image-row .column.text {
   font-size: 18px;
   text-align: left;
