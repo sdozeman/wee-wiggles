@@ -153,6 +153,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/about-03-health-safety@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 166968,
+		"inputAbbreviatedPath": "\/img\/about-03-health-safety@2x.jpg",
+		"outputAbbreviatedPath": "\/img\/about-03-health-safety@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/about-availability.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -274,6 +285,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/JessicaWatson@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 302322,
+		"inputAbbreviatedPath": "\/img\/JessicaWatson@2x.jpg",
+		"outputAbbreviatedPath": "\/img\/JessicaWatson@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/main-sprite@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -303,6 +325,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/img\/shape-2bg-repeater@2x.png",
 		"outputAbbreviatedPath": "\/img\/shape-2bg-repeater@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/shape-3bg-repeater@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22356,
+		"inputAbbreviatedPath": "\/img\/shape-3bg-repeater@2x.png",
+		"outputAbbreviatedPath": "\/img\/shape-3bg-repeater@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -502,7 +535,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/min\/main-min.js": {
 		"fileType": 64,

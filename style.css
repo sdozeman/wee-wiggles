@@ -1217,6 +1217,19 @@ img.mfp-img {
   right: 0;
   padding-top: 0;
 }
+span.sub-headline {
+  display: block;
+  font-size: 30px;
+  color: #666;
+  text-align: center;
+  font-family: 'Lato', arial, sans-serif;
+}
+span.sub-headline.l-align {
+  text-align: left;
+}
+span.sub-headline.r-align {
+  text-align: right;
+}
 .squiggle {
   text-align: center;
   position: relative;
@@ -2095,6 +2108,13 @@ footer .site-info span {
   background-size: 1100px 400px;
   background-attachment: fixed;
 }
+.site-content #h-bio {
+  padding: 100px 0;
+  min-height: 500px;
+  background: url(img/background-02.png) 0 0 repeat;
+  background-size: 1100px 400px;
+  background-attachment: fixed;
+}
 .site-content #h-contact:before,
 .site-content #h-contact:after {
   content: " ";
@@ -2343,11 +2363,11 @@ footer .site-info span {
   align-self: center;
 }
 .image-row {
-  padding: 50px 0;
   display: flex;
   margin: 0 -30px;
   flex-wrap: nowrap;
-  min-height: 320px;
+  min-height: 640px;
+  padding: 100px 0;
   justify-content: center;
 }
 .image-row.image-right .column.image {
@@ -2385,7 +2405,7 @@ footer .site-info span {
 }
 .image-row .column.image img.p-background {
   z-index: 0;
-  max-width: 705px;
+  max-width: 680px;
 }
 .image-row .column.image img.p-foreground {
   z-index: 40;
@@ -2395,7 +2415,7 @@ footer .site-info span {
   top: 40px;
 }
 .image-row .column.image.image-1 img.p-background {
-  left: 0;
+  left: 30px;
   top: -80px;
 }
 .image-row .column.image.image-1 img.p-foreground {
@@ -2407,20 +2427,36 @@ footer .site-info span {
   top: 40px;
 }
 .image-row .column.image.image-2 img.p-background {
-  right: 0;
-  top: -80px;
+  right: 30px;
+  top: -40px;
 }
 .image-row .column.image.image-2 img.p-foreground {
   right: 105px;
-  top: 80px;
+  top: 40px;
+}
+.image-row .column.image.image-3 img.p-image {
+  right: 0;
+  top: 40px;
+}
+.image-row .column.image.image-3 img.p-background {
+  left: 170px;
+  top: 0px;
+  max-width: 570px;
+}
+.image-row .column.image.image-3 img.p-foreground {
+  left: 120px;
+  top: 90px;
 }
 .image-row .column.text {
   font-size: 18px;
   text-align: left;
+  align-self: center;
 }
-.image-row .column.text .sub-headline {
-  display: block;
-  font-size: 30px;
+.image-row .column.text .sub-headline.squiggle {
+  margin-bottom: 20px;
+}
+.image-row .column.text h2.headline:not(.squiggle) {
+  margin-bottom: 0;
 }
 .btn,
 button,
@@ -2968,6 +3004,15 @@ body.admin-bar header.site-header {
     height: auto !important;
     display: none !important;
   }
+}
+#test {
+  right: 15px;
+  color: #f16161;
+  bottom: 10px;
+  z-index: 500000;
+  position: fixed;
+  font-size: 18px;
+  font-weight: bold;
 }
 .site-wrap {
   overflow: hidden;

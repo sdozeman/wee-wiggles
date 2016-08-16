@@ -24,13 +24,33 @@ jQuery(function(){
 
   var ibg1 = TweenMax.to('.image-1 .p-background', 1, { top: 0, ease: Linear.easeNone});
   var ifg1 = TweenMax.to('.image-1 .p-foreground', 1, { top: 0, ease: Linear.easeNone});
+  var ibg2 = TweenMax.to('.image-2 .p-background', 1, { top: 60, ease: Linear.easeNone});
+  var ifg2 = TweenMax.to('.image-2 .p-foreground', 1, { top: -60, ease: Linear.easeNone});
+  var ibg3 = TweenMax.to('.image-3 .p-background', 1, { top: 80, ease: Linear.easeNone});
+  var ifg3 = TweenMax.to('.image-3 .p-foreground', 1, { top: -10, ease: Linear.easeNone});
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 500})
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 750})
       .setTween(ibg1)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 500})
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 750})
       .setTween(ifg1)
+      .addTo(controller);
+
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 750})
+      .setTween(ibg2)
+      .addTo(controller);
+
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 750})
+      .setTween(ifg2)
+      .addTo(controller);
+
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 750})
+      .setTween(ibg3)
+      .addTo(controller);
+
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 750})
+      .setTween(ifg3)
       .addTo(controller);
 
   //var scene3 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 500})
@@ -81,4 +101,16 @@ jQuery(function(){
 			}
 		});
 	};
+
+  // Scroll Stuff
+  $(window).scroll(function(){
+    $("#test").html($(window).scrollTop());
+  });
+
+
+  // on resize functions
+  $(window).resize(function(){});
+
+  // trigger scroll and resize functions
+  $(window).trigger('scroll', 'resize');
 })( jQuery );
