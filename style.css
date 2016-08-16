@@ -1745,13 +1745,10 @@ header.site-header.scrolled nav.main-navigation ul > li a:after {
   filter: alpha(opacity=0);
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
-  header.site-header {
-    background: #1c3e56;
-  }
   header.site-header .menu-btn {
     top: 12px;
     right: 20px;
-    display: block;
+    display: none;
     cursor: pointer;
     position: absolute;
   }
@@ -2111,9 +2108,8 @@ footer .site-info span {
 .site-content #h-bio {
   padding: 100px 0;
   min-height: 500px;
-  background: url(img/background-02.png) 0 0 repeat;
-  background-size: 1100px 400px;
-  background-attachment: fixed;
+  background: #f7f7f7 url(img/shape-3bg-repeater@2x.png) 0 0 repeat;
+  background-size: 568px 565px;
 }
 .site-content #h-contact:before,
 .site-content #h-contact:after {
@@ -2419,7 +2415,7 @@ footer .site-info span {
   top: -80px;
 }
 .image-row .column.image.image-1 img.p-foreground {
-  left: 105px;
+  left: 90px;
   top: 80px;
 }
 .image-row .column.image.image-2 img.p-image {

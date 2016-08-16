@@ -29,11 +29,11 @@ jQuery(function(){
   var ibg3 = TweenMax.to('.image-3 .p-background', 1, { top: 80, ease: Linear.easeNone});
   var ifg3 = TweenMax.to('.image-3 .p-foreground', 1, { top: -10, ease: Linear.easeNone});
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 750})
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 900})
       .setTween(ibg1)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 750})
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 900})
       .setTween(ifg1)
       .addTo(controller);
 
@@ -45,7 +45,7 @@ jQuery(function(){
       .setTween(ifg2)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 750})
+  var scene1 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 800})
       .setTween(ibg3)
       .addTo(controller);
 

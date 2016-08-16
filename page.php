@@ -24,27 +24,75 @@ get_header(); ?>
 				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
-									<p class="sub headline">Learn Through</p>
-									<p class="main headline">play & discovery</p>
-										<a href="#" class="btn trans caret-r">Learn More</a>
+									<!-- if top sub-headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_1_subheadline')) {
+											echo '<p class="sub headline">' . get_field('hero_slide_1_subheadline') . '</p>';
+										}
+									?>
+									<!-- if main headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_1_mainheadline')) {
+											echo '<p class="main headline">' . get_field('hero_slide_1_mainheadline') . '</p>';
+										}
+									?>
+									<!-- if bottom sub-headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_1_lower_subheadline')) {
+											echo '<p class="sub headline">' . get_field('hero_slide_1_lower_subheadline') . '</p>';
+										}
+									?>
+									<a href="#" class="btn trans caret-r">Learn More</a>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
 						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
-									<p class="sub headline">Learn Through</p>
-									<p class="main headline">play & discovery</p>
-										<a href="#" class="btn trans caret-r">Learn More</a>
+									<!-- if top sub-headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_2_subheadline')) {
+											echo '<p class="sub headline">' . get_field('hero_slide_2_subheadline') . '</p>';
+										}
+									?>
+									<!-- if main headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_2_mainheadline')) {
+											echo '<p class="main headline">' . get_field('hero_slide_2_mainheadline') . '</p>';
+										}
+									?>
+									<!-- if bottom sub-headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_2_lower_subheadline')) {
+											echo '<p class="sub headline">' . get_field('hero_slide_2_lower_subheadline') . '</p>';
+										}
+									?>
+									<a href="#" class="btn trans caret-r">Learn More</a>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
 						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption left">
-									<p class="sub headline">Learn Through</p>
-									<p class="main headline">play & discovery</p>
-										<a href="#" class="btn trans caret-r">Learn More</a>
+									<!-- if top sub-headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_3_subheadline')) {
+											echo '<p class="sub headline">' . get_field('hero_slide_3_subheadline') . '</p>';
+										}
+									?>
+									<!-- if main headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_3_mainheadline')) {
+											echo '<p class="main headline">' . get_field('hero_slide_3_mainheadline') . '</p>';
+										}
+									?>
+									<!-- if bottom sub-headline exists, post it -->
+									<?php
+										if(get_field('hero_slide_3_lower_subheadline')) {
+											echo '<p class="sub headline">' . get_field('hero_slide_3_lower_subheadline') . '</p>';
+										}
+									?>
+									<a href="#" class="btn trans caret-r">Learn More</a>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
@@ -209,25 +257,27 @@ get_header(); ?>
 				<div class="container">
 					<span class="sub-headline">Meet the</span>
 					<h2 class="squiggle headline">Director</h2>
+
+
+				<!-- BEGIN IMAGE ROW -->
+						<div class="image-row image-left" id="target4">
+							<div class="column text">
+								<p>I’ve always loved working with children.
+									As a child I always said that I wanted to be a babysitter when I grew up! As a teenager I ran my church’s nursery and worked at summer camps (and of course did a ton of babysitting!).
+									While obtaining my education degree I ran an after school program for children in need and volunteered in schools. When I was offered a job with the Calgary Board of Education I was thrilled!
+									Over my teaching career I taught Foods, Fashion, English Language Arts, Health, and English Language Learning. I also ran a catering club and coached soccer, badminton, and cross-country.
+									I loved my job and felt so rewarded being able to make a difference in children’s lives.</p>
+									<p>While I loved being a teacher, I come from a family of small business owners and have always had an entrepreneurial spirit.
+										After my daughter was born, I decided to take a leap of faith and open up my own dayhome to allow me to still do what I love while being my own boss.</p>
+							</div><!-- .column -->
+							<div class="column image left image-4">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-04-B@2x.png" class="p-background" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/JessicaWatson@2x.jpg" class="p-image" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-04-F@2x.png" class="p-foreground" />
+							</div><!-- .column -->
+						</div><!-- .image-row -->
+
 				</div><!-- .container -->
-
-
-		<!-- BEGIN IMAGE ROW -->
-				<div class="image-row image-left" id="target4">
-					<div class="column text">
-						<p>Health and safety are of utmost importance to me. I will never drive with the children in my care.
-							I also will never post photos of children online or make my address freely available on the internet.
-							Only children with up-to-date vaccinations will be allowed to attend.
-							I also will be sanitizing toys weekly (at a minimum) and will ensure that children who are sick are kept or sent home.
-							Children will only be released to parents or identified emergency contacts.
-							I also have a video monitor in my playroom that records 24h of footage.</p>
-					</div><!-- .column -->
-					<div class="column image left image-4">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-04-B@2x.png" class="p-background" />
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/JessicaWatson@2x.jpg" class="p-image" />
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-04-F@2x.png" class="p-foreground" />
-					</div><!-- .column -->
-				</div><!-- .image-row -->
 			</section><!-- .section -->
 
 
