@@ -298,6 +298,81 @@ get_header(); ?>
 
 <!-- START GALLERY SECTION -->
 			<section id="h-gallery">
+				<div class="container">
+
+				<!-- GLIDE THAT SHIT -->
+					<div class="slider-copy">
+						<div class="slider-wrap">
+							<div data-slide="1" class="service first">
+								<h2>This is<br> SPARTA</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
+								<a class="link" href="#">Find out more</a>
+							</div>
+
+							<div data-slide="2" class="service active">
+								<h2>Lorem Ipsum Stuff</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
+								<a class="link" href="#">Find out more</a>
+							</div>
+
+							<div data-slide="3" class="service">
+								<h2>Turkey Dinner</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
+								<a class="link" href="#">Find out more</a>
+							</div>
+
+							<div data-slide="4" class="service">
+								<h2>I don't even...</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
+								<a class="link" href="#">Find out more</a>
+							</div>
+
+							<div data-slide="5" class="service">
+								<h2>I don't even...</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
+								<a class="link" href="#">Find out more</a>
+							</div>
+						</div><!-- .slider-wrap -->
+					</div><!-- .slider-copy -->
+
+					<div class="home-slider">
+						<div class="glide" id="carousel" style="">
+							<ul class="slides glide__track">
+								<li class="slide glide__slide">
+									<figure>
+										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals1.jpg">
+									</figure>
+								</li>
+								<li class="slide glide__slide">
+									<figure>
+										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals2.jpg">
+									</figure>
+								</li>
+								<li class="slide glide__slide">
+									<figure>
+										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals3.jpg">
+									</figure>
+								</li>
+								<li class="slide glide__slide">
+									<figure>
+										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals4.jpg">
+									</figure>
+								</li>
+								<li class="slide glide__slide">
+									<figure>
+										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals5.jpg">
+									</figure>
+								</li>
+							</ul>
+
+							<div class="slider__arrows glide__arrows">
+								<button data-glide-dir="&gt;" class="slider__arrow glide__arrow slider__arrows-item slider__arrows-item--righ next"></button>
+								<button data-glide-dir="&lt;" class="slider__arrow glide__arrow slider__arrows-item slider__arrows-item--left prev"></button>
+							</div>
+						</div><!-- .glide -->
+					</div><!-- .home-slider -->
+
+				</div><!-- .container -->
 			</section><!-- .section -->
 
 
