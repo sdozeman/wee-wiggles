@@ -21,78 +21,27 @@ get_header(); ?>
 			<section id="h-hero">
 				<div class="flexslider">
 				  <ul class="slides">
-				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center top no-repeat; background-size: cover;">
+				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center center no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
-									<!-- if top sub-headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_1_subheadline')) {
-											echo '<p class="sub headline">' . get_field('hero_slide_1_subheadline') . '</p>';
-										}
-									?>
-									<!-- if main headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_1_mainheadline')) {
-											echo '<p class="main headline">' . get_field('hero_slide_1_mainheadline') . '</p>';
-										}
-									?>
-									<!-- if bottom sub-headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_1_lower_subheadline')) {
-											echo '<p class="sub headline">' . get_field('hero_slide_1_lower_subheadline') . '</p>';
-										}
-									?>
-									<a href="#" class="btn trans caret-r">Learn More</a>
+									<p class="sub headline">Warm, safe & engaging</p>
+									<p class="main headline">environment</p>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
-						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center top no-repeat; background-size: cover;">
+						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center center no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
-									<!-- if top sub-headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_2_subheadline')) {
-											echo '<p class="sub headline">' . get_field('hero_slide_2_subheadline') . '</p>';
-										}
-									?>
-									<!-- if main headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_2_mainheadline')) {
-											echo '<p class="main headline">' . get_field('hero_slide_2_mainheadline') . '</p>';
-										}
-									?>
-									<!-- if bottom sub-headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_2_lower_subheadline')) {
-											echo '<p class="sub headline">' . get_field('hero_slide_2_lower_subheadline') . '</p>';
-										}
-									?>
-									<a href="#" class="btn trans caret-r">Learn More</a>
+									<p class="sub headline">Learn through play </p>
+									<p class="main headline">& discovery</p>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
-						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center top no-repeat; background-size: cover;">
+						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center center no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption left">
-									<!-- if top sub-headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_3_subheadline')) {
-											echo '<p class="sub headline">' . get_field('hero_slide_3_subheadline') . '</p>';
-										}
-									?>
-									<!-- if main headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_3_mainheadline')) {
-											echo '<p class="main headline">' . get_field('hero_slide_3_mainheadline') . '</p>';
-										}
-									?>
-									<!-- if bottom sub-headline exists, post it -->
-									<?php
-										if(get_field('hero_slide_3_lower_subheadline')) {
-											echo '<p class="sub headline">' . get_field('hero_slide_3_lower_subheadline') . '</p>';
-										}
-									?>
-									<a href="#" class="btn trans caret-r">Learn More</a>
+									<p class="sub headline">Nutritious</p>
+									<p class="main headline">meals & snacks</p>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
@@ -259,6 +208,32 @@ get_header(); ?>
 					<h2 class="squiggle headline">Director</h2>
 
 
+					<div class="grid grid-pad grid-pull bio-grid">
+						<div class="col-2 ico apple">
+							<small>Eight years experience as a teacher with the CBE</small>
+						</div><!-- .col-2 -->
+
+						<div class="col-2 ico ribbon">
+							<small>Level 3 (Child Supervisor) certified</small>
+						</div><!-- .col-2 -->
+
+						<div class="col-2 ico cross">
+							<small>Current First Aid (CPR/AED) and infant CPR</small>
+						</div><!-- .col-2 -->
+
+						<div class="col-2 ico hat">
+							<small>BED with Distinction from the University of Alberta</small>
+						</div><!-- .col-2 -->
+
+						<div class="col-2 ico pacifier">
+							<small>Alberta Health Child Care course certificate</small>
+						</div><!-- .col-2 -->
+
+						<div class="col-2 ico search">
+							<small>Criminal record check (vulnerable sector) completed</small>
+						</div><!-- .col-2 -->
+					</div><!-- .grid -->
+
 				<!-- BEGIN IMAGE ROW -->
 						<div class="image-row image-left" id="target4">
 							<div class="column text">
@@ -366,7 +341,7 @@ get_header(); ?>
 							</ul>
 
 							<div class="slider__arrows glide__arrows">
-								<button data-glide-dir="&gt;" class="slider__arrow glide__arrow slider__arrows-item slider__arrows-item--righ next"></button>
+								<button data-glide-dir="&gt;" class="slider__arrow glide__arrow slider__arrows-item slider__arrows-item--right next"></button>
 								<button data-glide-dir="&lt;" class="slider__arrow glide__arrow slider__arrows-item slider__arrows-item--left prev"></button>
 							</div>
 						</div><!-- .glide -->

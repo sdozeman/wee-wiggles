@@ -9,6 +9,8 @@
 
     section { min-height: 100px; }
 
+
+
 // Hero Section
   #h-hero {
     height: 650px;
@@ -16,6 +18,7 @@
     position: relative;
     background: @main-gray;;
   }//.hero
+
 
 
 // CTA Section
@@ -44,6 +47,7 @@
       .c-align { align-items: center; }
       .r-align { text-align: right; }//.r-align
   }//.cta
+
 
 
 // About Section
@@ -122,6 +126,7 @@
   }//#home-about
 
 
+
 // Availability Section
   #h-avail {
     overflow: hidden;
@@ -187,6 +192,7 @@
 
 
 
+// Testimonial Section
   #h-additional {
     padding: 70px 0;
     min-height: 500px;
@@ -197,18 +203,56 @@
 
 
 
+// Bio Section
   #h-bio {
     min-height: 500px;
-    padding: 100px 0 155px;
+    padding: 100px 0 50px;
     background: #f7f7f7 url(img/shape-3bg-repeater@2x.png) 0 0 repeat;
     background-size: 568px 565px;
+
+      .bio-grid {
+        z-index: 100;
+        position: relative;
+        text-align: center;
+
+          .ico {
+            margin-top: 20px;
+            position: relative;
+            padding-top: 140px;
+
+              &:before {
+                top: 0;
+                content: "";
+                width: 110px;
+                height: 110px;
+                display: block;
+                position: absolute;
+                left: calc(~"50% - 65px");
+                background: url(img/main-sprite@2x.png) 5px -390px no-repeat;
+                background-size: 843px 450px;
+              }//:before
+
+              &.apple:before { background-position: 10px -280px; }
+              &.ribbon:before { background-position: -94px -280px; }
+              &.cross:before { background-position: -202px -280px; }
+              &.hat:before {
+                width: 140px;
+                left: calc(~"50% - 80px");
+                background-position: -318px -280px;
+              }//.hat
+              &.pacifier:before { background-position: -462px -280px; }
+              &.search:before { background-position: -570px -280px; }
+          }//.col-2
+      }//.bio-grid
   }//#h-additional
 
 
+
+// Gallery Section
   #h-gallery {
     .clearfix;
-    padding: 100px 0;
     position: relative;
+    padding: 120px 0 100px;
     background: #f7f7f7 url(img/gallery-bg-repeat@2x.png) 0 0 repeat;
     background-size: 566px 306px;
 
@@ -216,9 +260,11 @@
   }//#h-gallery
 
 
+
 // Contact Section
   #h-contact {
     .clearfix;
+    padding: 100px 0;
 
       .col-4 {
         float: left;
@@ -259,10 +305,7 @@
           }//small
       }//.col-4
 
-      form {
-        text-align: center;
-        margin-bottom: 120px;
-      }//form
+      form { text-align: center; }//form
   }//#h-contact
 
 }//.body-content
