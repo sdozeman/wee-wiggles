@@ -28,29 +28,39 @@ jQuery(function(){
   var ifg2 = TweenMax.to('.image-2 .p-foreground', 1, { top: -60, ease: Linear.easeNone});
   var ibg3 = TweenMax.to('.image-3 .p-background', 1, { top: 80, ease: Linear.easeNone});
   var ifg3 = TweenMax.to('.image-3 .p-foreground', 1, { top: -10, ease: Linear.easeNone});
+  var ibg4 = TweenMax.to('.image-4 .p-background', 1, { top: 20, ease: Linear.easeNone});
+  var ifg4 = TweenMax.to('.image-4 .p-foreground', 1, { top: -70, ease: Linear.easeNone});
 
   var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 900})
       .setTween(ibg1)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 900})
+  var scene2 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 900})
       .setTween(ifg1)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 750})
+  var scene3 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 750})
       .setTween(ibg2)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 750})
+  var scene4 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 750})
       .setTween(ifg2)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 800})
+  var scene5 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 800})
       .setTween(ibg3)
       .addTo(controller);
 
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 750})
+  var scene6 = new ScrollMagic.Scene({triggerElement: "#target3", duration: 800})
       .setTween(ifg3)
+      .addTo(controller);
+
+  var scene7 = new ScrollMagic.Scene({triggerElement: "#target4", duration: 1000})
+      .setTween(ibg4)
+      .addTo(controller);
+
+  var scene8 = new ScrollMagic.Scene({triggerElement: "#target4", duration: 1000})
+      .setTween(ifg4)
       .addTo(controller);
 
   //var scene3 = new ScrollMagic.Scene({triggerElement: "#target2", duration: 500})
@@ -104,7 +114,7 @@ jQuery(function(){
 
 
   // Glide Slider
-  //http://glide.jedrzejchalubek.com/ 
+  //http://glide.jedrzejchalubek.com/
   ;(function() {
 
   	function widthChanged(mq) {

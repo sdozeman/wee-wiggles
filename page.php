@@ -271,9 +271,9 @@ get_header(); ?>
 										After my daughter was born, I decided to take a leap of faith and open up my own dayhome to allow me to still do what I love while being my own boss.</p>
 							</div><!-- .column -->
 							<div class="column image left image-4">
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-04-B@2x.png" class="p-background" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-B@2x.png" class="p-background" />
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/JessicaWatson@2x.jpg" class="p-image" />
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-04-F@2x.png" class="p-foreground" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-F@2x.png" class="p-foreground" />
 							</div><!-- .column -->
 						</div><!-- .image-row -->
 
