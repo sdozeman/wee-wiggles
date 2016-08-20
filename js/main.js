@@ -28,7 +28,7 @@ jQuery(function(){
   var ifg2 = TweenMax.to('.image-2 .p-foreground', 1, { top: -60, ease: Linear.easeNone});
   var ibg3 = TweenMax.to('.image-3 .p-background', 1, { top: 80, ease: Linear.easeNone});
   var ifg3 = TweenMax.to('.image-3 .p-foreground', 1, { top: -10, ease: Linear.easeNone});
-  var ibg4 = TweenMax.to('.image-4 .p-background', 1, { top: 20, ease: Linear.easeNone});
+  var ibg4 = TweenMax.to('.image-4 .p-background', 1, { top: -40, ease: Linear.easeNone});
   var ifg4 = TweenMax.to('.image-4 .p-foreground', 1, { top: -70, ease: Linear.easeNone});
 
   var scene1 = new ScrollMagic.Scene({triggerElement: "#target1", duration: 900})
