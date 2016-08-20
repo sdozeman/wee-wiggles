@@ -2157,6 +2157,92 @@ footer .site-info span {
 .site-content #h-bio .bio-grid .ico.search:before {
   background-position: -570px -280px;
 }
+.site-content #h-rates {
+  padding: 100px 0;
+  position: relative;
+  min-height: 850px;
+  background: #fff url(img/hours-rates@2x.jpg) bottom center no-repeat;
+  background-size: 610px 565px;
+}
+.site-content #h-rates:before,
+.site-content #h-rates:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.site-content #h-rates:after {
+  clear: both;
+}
+.site-content #h-rates:before,
+.site-content #h-rates:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.site-content #h-rates:after {
+  clear: both;
+}
+.site-content #h-rates > .container {
+  max-width: 1320px;
+}
+.site-content #h-rates .column {
+  font-size: 20px;
+  text-align: left;
+  padding: 50px 112px 0;
+}
+.site-content #h-rates .column span.fancy {
+  color: #f58c88;
+  display: block;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  font-family: 'aleoregular', times, serif;
+}
+.site-content #h-rates .column span.fancy:before,
+.site-content #h-rates .column span.fancy:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.site-content #h-rates .column span.fancy:before {
+  top: 0;
+  left: -112px;
+  width: 92px;
+  height: 92px;
+  background: url(img/main-sprite@2x.png) -524px -150px no-repeat;
+  background-size: 843px 450px;
+}
+.site-content #h-rates .column span.fancy:after {
+  z-index: 10;
+  left: -30px;
+  height: 6px;
+  width: 215px;
+  bottom: 25px;
+  background: #ffda6b;
+}
+.site-content #h-rates .column.rates {
+  text-align: right;
+}
+.site-content #h-rates .column.rates span.fancy {
+  color: #91e6d5;
+}
+.site-content #h-rates .column.rates span.fancy:before {
+  right: -112px;
+  left: auto;
+  background-position: -628px -150px;
+}
+.site-content #h-rates .column.rates span.fancy:after {
+  left: auto;
+  right: -30px;
+}
+.site-content #h-rates .column small {
+  display: block;
+  line-height: 140%;
+  font-size: 16px;
+}
 .site-content #h-gallery {
   position: relative;
   padding: 120px 0 100px;

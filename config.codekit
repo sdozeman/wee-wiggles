@@ -327,6 +327,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/hours-rates@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 517579,
+		"inputAbbreviatedPath": "\/img\/hours-rates@2x.jpg",
+		"outputAbbreviatedPath": "\/img\/hours-rates@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/image-bg-shapes@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

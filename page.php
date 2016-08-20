@@ -258,6 +258,29 @@ get_header(); ?>
 
 <!-- START RATEs SECTION -->
 			<section id="h-rates">
+				<div class="container">
+					<h2 class="squiggle headline">Hours & Rates</h2>
+
+						<div class="grid grid-pad grid-pull hours-rate-grid">
+							<div class="col-6">
+								<div class="column hours">
+									<span class="fancy">Hours</span>
+									<p>Wee Wiggles Inc. operates from the end of August to the end of June (corresponding to the CBE traditional calendar).
+										My hours are Monday to Friday, 7:30 – 5:00. My start time can occasionally be flexible when needed.</p>
+								</div><!-- .column -->
+							</div><!-- .col-6 -->
+							<div class="col-6">
+								<div class="column rates">
+									<span class="fancy">Rates</span>
+									<p>I charge $950/month for full-time and $700/month for part-time care over 10 months.
+										Fees are not charged over the summer, so if you were to average full-time fees over 12 months this would be less than $800 a month.</p>
+
+									<small>*Keep in mind that if the average month has 22 work days,
+										with 9.5 hours a day of care this would mean that I would be grossing $4.50 a child before taxes and expenses are calculated in.</small>
+								</div><!-- .column -->
+							</div><!-- .col-6 -->
+						</div><!-- .grid -->
+				</div><!-- .container -->
 			</section><!-- .section -->
 
 

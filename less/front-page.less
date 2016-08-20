@@ -248,6 +248,75 @@
 
 
 
+// Hours & Rates Section
+  #h-rates {
+    .clearfix;
+    padding: 100px 0;
+    position: relative;
+    min-height: 850px;
+    background: @white url(img/hours-rates@2x.jpg) bottom center no-repeat;
+    background-size: 610px 565px;
+
+       > .container { max-width: 1320px; }
+
+       .column {
+         font-size: 20px;
+         text-align: left;
+         padding: 50px 112px 0;
+
+          span.fancy {
+            color: @red2;
+            display: block;
+            font-size: 40px;
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 30px;
+            font-family: @font-family-headings;
+
+              &:before, &:after {
+                content: "";
+                display: block;
+                position: absolute;
+              }//:before, :after
+
+
+              &:before {
+                top: 0;
+                left: -112px;
+                width: 92px;
+                height: 92px;
+                background: url(img/main-sprite@2x.png) -524px -150px no-repeat;
+                background-size: 843px 450px;
+              }//:before
+
+              &:after {
+                z-index: 10;
+                left: -30px;
+                height: 6px;
+                width: 215px;
+                bottom: 25px;
+                background: #ffda6b;
+              }//:after
+          }//.fancy
+
+          &.rates {
+            text-align: right;
+
+              span.fancy {
+                color: #91e6d5;
+
+                  &:before { right: -112px; left: auto; background-position: -628px -150px; }
+                  &:after { left: auto; right: -30px; }
+              }//.fancy
+          }//.rates
+
+          small { display: block; line-height: 140%; font-size: 16px; }
+
+       }//.column
+  }//#h-gallery
+
+
+
 // Gallery Section
   #h-gallery {
     .clearfix;
