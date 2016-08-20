@@ -286,11 +286,14 @@ get_header(); ?>
 
 <!-- START SCHEDULE SECTION -->
 			<section id="h-schedule">
+				<div class="container">
+
+				</div><!-- .container -->
 			</section><!-- .section -->
 
 
 <!-- START MENU SECTION -->
-			<section id="h-menu">
+			<section id="h-menu" style="display: none;">
 			</section><!-- .section -->
 
 

@@ -2243,6 +2243,35 @@ footer .site-info span {
   line-height: 140%;
   font-size: 16px;
 }
+.site-content #h-schedule {
+  overflow: hidden;
+  background: #f7f7f7;
+}
+.site-content #h-schedule > .container {
+  min-height: 500px;
+  padding-top: 90px;
+  max-width: 1200px;
+  position: relative;
+  text-align: center;
+  background: #f7f7f7;
+  padding-bottom: 90px;
+}
+.site-content #h-schedule > .container:before,
+.site-content #h-schedule > .container:after {
+  top: 0;
+  left: 100%;
+  content: "";
+  height: 100%;
+  width: 3000px;
+  display: block;
+  position: absolute;
+  background: url(img/shape-2bg-repeater@2x.png) 0 0 repeat;
+  background-size: 780px auto;
+}
+.site-content #h-schedule > .container:after {
+  left: auto;
+  right: 100%;
+}
 .site-content #h-gallery {
   position: relative;
   padding: 120px 0 100px;
