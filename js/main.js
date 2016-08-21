@@ -113,6 +113,7 @@ jQuery(function(){
 	};
 
 
+
   // Glide Slider
   //http://glide.jedrzejchalubek.com/
   ;(function() {
@@ -148,7 +149,7 @@ jQuery(function(){
       },
   		afterTransition: function (data) {
   			coverflow(data);
-        console.log(data.index);
+        //console.log(data.index);
 
         $(".slider-copy .slider-wrap").find("[data-slide='" + data.index + "']").addClass('active');
 
@@ -169,8 +170,6 @@ jQuery(function(){
   			slider.removeClass('is-loading').addClass('is-visible');
   		}, 100);
   	});
-
-
   })();
 
 
