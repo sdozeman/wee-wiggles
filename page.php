@@ -137,11 +137,11 @@ get_header(); ?>
 							<span class="sub-headline l-align">Fostering</span>
 							<h2 class="squiggle l-align headline">early-learning</h2>
 
-							<p>It is my core belief that children should learn through play and discovery.
+							<p>It is my core belief that <strong>children should learn through play and discovery</strong>.
 								As a teacher, I found class-size to be the biggest indicator of success in my classrooms.
 								As such, I will be keeping my dayhome low-ratio to maximize the amount of time I can spend with each child.
-								I strive to create lifelong learners in a warm, safe,
-								and engaging environment for children to explore their surroundings.</p>
+								I strive to create lifelong learners in a <strong>warm, safe,
+								and engaging</strong> environment for children to explore their surroundings.</p>
 
 							<p>Every month we will explore a theme to do with the world around us.
 								Every week I will create activities based on the expressed interests from the week before for the children in my care.
@@ -180,7 +180,7 @@ get_header(); ?>
 							<span class="sub-headline l-align">Health</span>
 							<h2 class="squiggle l-align headline">& safety</h2>
 
-							<p>Health and safety are of utmost importance to me. I will never drive with the children in my care.
+							<p><strong>Health and safety are of utmost importance to me</strong>. I will never drive with the children in my care.
 								I also will never post photos of children online or make my address freely available on the internet.
 								Only children with up-to-date vaccinations will be allowed to attend.
 								I also will be sanitizing toys weekly (at a minimum) and will ensure that children who are sick are kept or sent home.
@@ -248,6 +248,7 @@ get_header(); ?>
 							<div class="column image left image-4">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-B@2x.png" class="p-background" />
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/JessicaWatson@2x.jpg" class="p-image" />
+								<span class="img-cap">Jessica Watson</span>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-F@2x.png" class="p-foreground" />
 							</div><!-- .column -->
 						</div><!-- .image-row -->
@@ -272,7 +273,7 @@ get_header(); ?>
 							<div class="col-6">
 								<div class="column rates">
 									<span class="fancy">Rates</span>
-									<p>I charge $950/month for full-time and $700/month for part-time care over 10 months.
+									<p>I charge <strong>$950/month for full-time</strong> and <strong>$700/month for part-time</strong> care over 10 months.
 										Fees are not charged over the summer, so if you were to average full-time fees over 12 months this would be less than $800 a month.</p>
 
 									<small>*Keep in mind that if the average month has 22 work days,
@@ -287,13 +288,36 @@ get_header(); ?>
 <!-- START SCHEDULE SECTION -->
 			<section id="h-schedule">
 				<div class="container">
+					<span class="sub-headline">Daily</span>
+					<h2 class="squiggle headline">Schedule</h2>
 
+						<ul id="schedule-list">
+							<li><span class="time-slot">7:30-8:00</span>Arrival, self-directed play</li>
+							<li><span class="time-slot">8:00-8:15</span>Wash up</li>
+							<li><span class="time-slot">8:15-8:45</span>Breakfast</li>
+							<li><span class="time-slot">8:45-9:00</span>Wash up, diaper changes</li>
+							<li><span class="time-slot">*9:00-10:00*</span>*Nap time for morning nappers*</li>
+							<li><span class="time-slot">9:00-9:30</span>Circle time</li>
+							<li><span class="time-slot">7:30-8:00</span>Arrival, self-directed play</li>
+							<li><span class="time-slot">8:00-8:15</span>Wash up</li>
+							<li><span class="time-slot">8:15-8:45</span>Breakfast</li>
+							<li><span class="time-slot">8:45-9:00</span>Wash up, diaper changes</li>
+							<li><span class="time-slot">*9:00-10:00*</span>*Nap time for morning nappers*</li>
+							<li><span class="time-slot">9:00-9:30</span>Circle time</li>
+						</ul>
+
+						<p class="note">Please note that this schedule is not set-in-stone, and will be adjusted as the day unfolds as needed.
+							Outside time is weather dependent. In inclement weather, outdoor time is replaced with indoor activity time.</p>
 				</div><!-- .container -->
 			</section><!-- .section -->
 
 
 <!-- START MENU SECTION -->
-			<section id="h-menu" style="display: none;">
+			<section id="h-menu">
+				<div class="container">
+					<span class="sub-headline">Weekly</span>
+					<h2 class="squiggle headline">Menu</h2>
+				</div><!-- .container -->
 			</section><!-- .section -->
 
 
@@ -389,7 +413,7 @@ get_header(); ?>
 
 							<div class="col-4 ico email">
 								<p>Email</p>
-								<small>hello@weewigglesinc.com</small>
+								<small><a href="mailto:hello@weewigglesinc.com" class="plain-link">hello@weewigglesinc.com</a></small>
 							</div><!-- ico -->
 
 							<div class="col-4 ico clock">
