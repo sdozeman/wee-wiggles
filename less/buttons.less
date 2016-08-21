@@ -20,10 +20,11 @@ input[type="submit"] {
   font-size: @font-size-base - 2;
   font-family: @font-family-base;
   .transition(all @trans-speed ease);
-  
+
     &:hover {
-      background: rgba(241, 97, 97, .6);
+      color: @white;
       text-decoration: none;
+      background: rgba(241, 97, 97, .6);
     }//:hover
 
     &.sml { font-size: @font-size-base - 4; }
@@ -33,6 +34,7 @@ input[type="submit"] {
       border-color: @red;
 
         &:hover {
+          color: @white;
           .box-shadow(none);
           background-color: @purple;
           border-color: @purple;

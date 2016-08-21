@@ -63,7 +63,7 @@ get_header(); ?>
 
 						<div class="fgrid-cell col-4">
 							<div class="flex-wrap r-align c-align r-height">
-								<a href="#" class="btn lrg trans caret-r">Contact Us</a>
+								<a href="#h-contact" class="btn lrg trans caret-r">Contact Us</a>
 							</div><!-- .flex-wrap -->
 						</div><!-- .fgrid-cell -->
 					</div><!-- .fgrid-->
@@ -118,7 +118,7 @@ get_header(); ?>
 									<span class="source">via <a href="#">Calgary Board of Education</a></span>
 								</blockquote>
 
-								<p>Please <a href="#">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
+								<p>Please <a href="#h-contact">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
 							</div><!-- .container -->
 						</div><!-- .flex-wrap -->
 					</div><!-- .col-8 -->

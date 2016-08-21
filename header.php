@@ -22,8 +22,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<div id="test"></div>
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wee-wiggles' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#h-about"><?php esc_html_e( 'Skip to content', 'wee-wiggles' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container">
@@ -34,13 +33,13 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
 					<ul>
-						<li><a href="#" class="ico heart">About Us</a></li>
-						<li><a href="#" class="ico star">The Director</a></li>
-						<li><a href="#" class="ico clock">Hours & Rates</a></li>
-						<li><a href="#" class="ico calendar">Daily Schedule</a></li>
-						<li><a href="#" class="ico utensils">Weekly Menu</a></li>
-						<li><a href="#" class="ico camera">Photo Gallery</a></li>
-						<li><a href="#" class="ico envelope">Contact</a></li>
+						<li><a href="#h-about" class="ico heart">About Us</a></li>
+						<li><a href="#h-bio" class="ico star">The Director</a></li>
+						<li><a href="#h-rates" class="ico clock">Hours & Rates</a></li>
+						<li><a href="#h-schedule" class="ico calendar">Daily Schedule</a></li>
+						<li><a href="#h-menu" class="ico utensils">Weekly Menu</a></li>
+						<li><a href="#h-gallery" class="ico camera">Photo Gallery</a></li>
+						<li><a href="#h-contact" class="ico envelope">Contact</a></li>
 					</ul>
 				</nav><!-- #site-navigation -->
 
