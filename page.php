@@ -21,7 +21,7 @@ get_header(); ?>
 			<section id="h-hero">
 				<div class="flexslider">
 				  <ul class="slides">
-				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center center no-repeat; background-size: cover;">
+				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
 									<p class="sub headline">Warm, safe & engaging</p>
@@ -29,7 +29,7 @@ get_header(); ?>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
-						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center center no-repeat; background-size: cover;">
+						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption right">
 									<p class="sub headline">Learn through play </p>
@@ -37,7 +37,7 @@ get_header(); ?>
 								</div><!-- .caption -->
 							</div><!-- .container -->
 				    </li>
-						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center center no-repeat; background-size: cover;">
+						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center top no-repeat; background-size: cover;">
 							<div class="container">
 								<div class="caption left">
 									<p class="sub headline">Nutritious</p>
