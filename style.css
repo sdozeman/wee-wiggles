@@ -2322,7 +2322,7 @@ footer .site-info span {
   font-size: 24px;
   text-align: left;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-left: calc(50% + 10px);
 }
 .site-content #h-schedule #schedule-list li:before,
@@ -2355,7 +2355,7 @@ footer .site-info span {
 .site-content #h-schedule #schedule-list li:after {
   top: 18px;
   height: 5px;
-  width: 64px;
+  width: 55px;
   background: #f16161;
   right: calc(50% + 10px);
 }
