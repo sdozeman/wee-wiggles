@@ -45,13 +45,14 @@
 
 				<a class="menu-btn">
 					<div class="toggle">
-						<span class="l1"></span>
-						<span class="l1"></span>
-						<span class="l1"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
 
 					<span class="menu-text">Menu</span>
-				</a>
+				</a><!-- .menu-btn -->
 			</div><!-- .container -->
 		</header><!-- #masthead -->
 

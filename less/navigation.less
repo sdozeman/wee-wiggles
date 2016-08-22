@@ -131,15 +131,20 @@ nav.main-navigation {
 		}//@desktop
 
 
-		@media @tablet, @mobile-lg, @mobile{
+		@media @tablet, @mobile-lg, @mobile {
+			top: 0;
 			left: 0;
-			top: 70px;
+			padding: 0;
 			width: 100%;
-			display: none;
-			background: @red;
+			bottom: auto;
+			height: auto;
+			display:block;
+			background: @white;
 
 			ul {
 				float: none;
+				height: auto;
+				display: block;
 
 					> li {
 						display: block;
