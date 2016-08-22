@@ -3707,15 +3707,6 @@ body.admin-bar header.site-header {
     display: none !important;
   }
 }
-#test {
-  right: 15px;
-  color: #f16161;
-  bottom: 10px;
-  z-index: 500000;
-  position: fixed;
-  font-size: 18px;
-  font-weight: bold;
-}
 .site-wrap {
   overflow: hidden;
   max-width: 2000px;
@@ -3743,4 +3734,9 @@ body.admin-bar header.site-header {
 }
 .container.xsml {
   max-width: 770px;
+}
+#contactResponse {
+  position: relative;
+  text-align: center;
+  margin: 100px auto 25px;
 }

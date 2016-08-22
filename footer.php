@@ -26,15 +26,6 @@
 
 <?php wp_footer(); ?>
 
-<style>
-#contactResponse {
-  position: relative;
-  margin: 100px 0 25px 0;
-  text-align: center;
-}
-</style>
-
-
 
 </body>
 </html>
