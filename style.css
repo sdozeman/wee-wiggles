@@ -1984,6 +1984,9 @@ footer .site-info span {
 .site-content section {
   min-height: 100px;
 }
+.site-content section:focus {
+  outline: 0;
+}
 .site-content #h-hero {
   height: 650px;
   overflow: hidden;
