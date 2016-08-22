@@ -298,12 +298,20 @@ get_header(); ?>
 							<li><span class="time-slot">8:45-9:00</span>Wash up, diaper changes</li>
 							<li><span class="time-slot">*9:00-10:00*</span>*Nap time for morning nappers*</li>
 							<li><span class="time-slot">9:00-9:30</span>Circle time</li>
-							<li><span class="time-slot">7:30-8:00</span>Arrival, self-directed play</li>
-							<li><span class="time-slot">8:00-8:15</span>Wash up</li>
-							<li><span class="time-slot">8:15-8:45</span>Breakfast</li>
-							<li><span class="time-slot">8:45-9:00</span>Wash up, diaper changes</li>
-							<li><span class="time-slot">*9:00-10:00*</span>*Nap time for morning nappers*</li>
-							<li><span class="time-slot">9:00-9:30</span>Circle time</li>
+							<li><span class="time-slot">9:30-10:00</span>Craft/activity time</li>
+							<li><span class="time-slot">10:00-10:15</span>Wash up</li>
+							<li><span class="time-slot">10:15-10:45</span>AM snack</li>
+							<li><span class="time-slot">10:45-11:00</span>Wash up, diaper changes</li>
+							<li><span class="time-slot">11:00-11:45</span>Outside play</li>
+							<li><span class="time-slot">11:45-12:00</span>Wash up</li>
+							<li><span class="time-slot">12:00-12:30</span>Lunch</li>
+							<li><span class="time-slot">12:30-12:45</span>Wash up</li>
+							<li><span class="time-slot">12:45-1:00</span>Story time, diaper changes</li>
+							<li><span class="time-slot">1:00-3:00</span>Nap time</li>
+							<li><span class="time-slot">3:00-3:15</span>Wash up, diaper changes</li>
+							<li><span class="time-slot">3:15-3:45</span>PM snack</li>
+							<li><span class="time-slot">3:45-4:15</span>Self-directed play</li>
+							<li><span class="time-slot">4:15-5:00</span>Outside play and pick up</li>
 						</ul>
 
 						<p class="note">Please note that this schedule is not set-in-stone, and will be adjusted as the day unfolds as needed.
@@ -404,13 +412,16 @@ get_header(); ?>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-purple">
 							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
+								<li>Whole-wheat penne</li>
+								<li>Tomato & meat sauce</li>
+								<li>Blueberries</li>
+								<li>Water</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-red Rtable-cell--foot">
 							<ul>
-								<li>Celery with peanut butter</li>
+								<li>Carrots</li>
+								<li>Homemade yogurt dill dip</li>
 								<li>Milk</li>
 							</ul>
 						</div><!-- .Rtable-cell--foot -->
@@ -420,25 +431,27 @@ get_header(); ?>
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Thursday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-blue">
 							<ul>
-								<li>Celery with peanut butter</li>
+								<li>Cheerios</li>
+								<li>Strawberries</li>
 								<li>Milk</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-purple">
 							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
+								<li>Fruit smoothie</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-red">
 							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
+								<li>Egg salad sandwich</li>
+								<li>Cucumber slices with homemade yogurt dill dip</li>
+								<li>Grapes</li>
+								<li>Water</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-yellow Rtable-cell--foot">
 							<ul>
-								<li>Celery with peanut butter</li>
+								<li>Homemade banana muffin</li>
 								<li>Milk</li>
 							</ul>
 						</div><!-- .Rtable-cell--foot -->
@@ -448,26 +461,27 @@ get_header(); ?>
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Friday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-purple">
 							<ul>
-								<li>Celery with peanut butter</li>
+								<li>Blueberry pancakes</li>
 								<li>Milk</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-red">
 							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
+								<li>Homemade granola bar</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-yellow">
 							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
+								<li>Homemade chicken noodle soup with carrots</li>
+								<li>Homemade buns</li>
+								<li>Peaches</li>
+								<li>Water</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-cyan Rtable-cell--foot">
 							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
+								<li>Applesauce with kale</li>
+								<li>Cheese</li>
 							</ul>
 						</div><!-- .Rtable-cell--foot -->
 					</div>
@@ -577,33 +591,34 @@ get_header(); ?>
 							</div><!-- ico -->
 						</div><!-- .grid -->
 
-						<form id="contact-form" class="FlowupLabels" action="">
+						<form id="contact-form" class="FlowupLabels" method="post">
 							<div class="grid grid-pad grid-pull">
 								<div class="col-6">
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_name">Your name</label>
-										<input type="text" class="fl_input required" id="c-name">
+										<input type="text" class="fl_input required" id="c-name" name="name" required>
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_email">Your e-mail</label>
-										<input type="text" class="fl_input required" id="c-email">
+										<input type="text" class="fl_input required" id="c-email" name="email" required>
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label" for="c_subject">Subject</label>
-										<input type="text" class="fl_input" id="c-subject">
+										<input type="text" class="fl_input" id="c-subject" name="subject">
 									</div><!-- .fl_wrap -->
 								</div><!-- .col-6 -->
 
 								<div class="col-6">
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c-mess">Message</label>
-										<textarea id="c-mess" class="fl_input"></textarea>
+										<textarea id="c-mess" class="fl_input" name="message" required></textarea>
 									</div><!-- fl_wrap -->
 								</div><!-- .col-6 -->
 							</div><!-- .grid -->
 
 							<button type="submit" class="btn red">Send Message</button>
 						</form><!-- #contact-form -->
+						<div id="contactResponse"></div>
 
 				</div><!-- .container -->
 			</section><!-- .section -->
@@ -611,5 +626,24 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
+
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+
+		$formcontent=" From: $name \n Message: $message";
+		$recipient = "jacquelinespins@gmail.com";
+		$subject = "Web form: $subject";
+		$mailheader = "From: $email \r\n";
+
+		if( mail($recipient, $subject, $formcontent, $mailheader) )
+		{
+				echo "<h2>Thank you for your message!</h2>";
+		}
+		else
+		{
+				echo "<h2>Sorry, there has been an error.</h2>";
+		}
 
 get_footer();
