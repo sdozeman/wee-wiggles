@@ -63,7 +63,7 @@ get_header(); ?>
 
 						<div class="fgrid-cell col-4">
 							<div class="flex-wrap r-align c-align r-height">
-								<a href="#" class="btn lrg trans caret-r">Contact Us</a>
+								<a href="#h-contact" class="btn lrg trans caret-r">Contact Us</a>
 							</div><!-- .flex-wrap -->
 						</div><!-- .fgrid-cell -->
 					</div><!-- .fgrid-->
@@ -118,7 +118,7 @@ get_header(); ?>
 									<span class="source">via <a href="#">Calgary Board of Education</a></span>
 								</blockquote>
 
-								<p>Please <a href="#">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
+								<p>Please <a href="#h-contact">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
 							</div><!-- .container -->
 						</div><!-- .flex-wrap -->
 					</div><!-- .col-8 -->
@@ -317,6 +317,161 @@ get_header(); ?>
 				<div class="container">
 					<span class="sub-headline">Weekly</span>
 					<h2 class="squiggle headline">Menu</h2>
+
+					<div class="Rtable Rtable--5cols Rtable--collapse">
+
+
+<!-- BEGIN COLUMN ONE // MONDAY-->
+					  <div style="order:0;" class="Rtable-cell Rtable-cell--head first-col"><h3>Monday</h3></div>
+					  <div style="order:1;" class="Rtable-cell cell-1 bg-red first-col">
+							<span>Breakfast</span>
+							<ul>
+								<li>Cheerios</li>
+								<li>Strawberries</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:2;" class="Rtable-cell cell-2 bg-yellow first-col">
+							<span>AM Snack</span>
+							<ul>
+								<li>Banana</li>
+								<li>Yogurt</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+						<div style="order:3;" class="Rtable-cell cell-3 bg-cyan first-col">
+							<span>Lunch</span>
+							<ul>
+								<li>Healthy version of butter chicken<li>
+								<li>Rice</li>
+								<li>Cooked broccoli</li>
+								<li>Grapes</li>
+								<li>Water</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:4;" class="Rtable-cell cell-4 bg-blue Rtable-cell--foot first-col">
+							<span>PM Snack</span>
+							<ul>
+								<li>Homemade granola bar</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell--foot -->
+
+
+<!-- BEGIN COLUMN TWO // TUESDAY-->
+						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Tuesday</h3></div>
+					  <div style="order:1;" class="Rtable-cell cell-1 bg-yellow">
+							<ul>
+								<li>Egg</li>
+								<li>Homemade bread</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:2;" class="Rtable-cell cell-2 bg-cyan">
+							<ul>
+								<li>Applesauce with kale</li>
+								<li>Cheese</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+						<div style="order:3;" class="Rtable-cell cell-3 bg-blue">
+							<ul>
+								<li>Make-your-own veggie tortilla pizza</li>
+								<li>Strawberries</li>
+								<li>Water</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:4;" class="Rtable-cell cell-4 bg-purple Rtable-cell--foot">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell--foot -->
+
+
+<!-- BEGIN COLUMN THREE // WEDNESDAY -->
+						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Wednesday</h3></div>
+					  <div style="order:1;" class="Rtable-cell cell-1 bg-cyan">
+							<ul>
+								<li>Homemade pumpkin muffin</li>
+								<li>Banana</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:2;" class="Rtable-cell cell-2 bg-blue">
+							<ul>
+								<li>Grapes</li>
+								<li>Yogurt</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+						<div style="order:3;" class="Rtable-cell cell-3 bg-purple">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:4;" class="Rtable-cell cell-4 bg-red Rtable-cell--foot">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell--foot -->
+
+
+<!-- BEGIN COLUMN FOUR // THURSDAY-->
+						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Thursday</h3></div>
+					  <div style="order:1;" class="Rtable-cell cell-1 bg-blue">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:2;" class="Rtable-cell cell-2 bg-purple">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+						<div style="order:3;" class="Rtable-cell cell-3 bg-red">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:4;" class="Rtable-cell cell-4 bg-yellow Rtable-cell--foot">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell--foot -->
+
+
+<!-- BEGIN COLUMN FIVE // FRIDAY -->
+						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Friday</h3></div>
+					  <div style="order:1;" class="Rtable-cell cell-1 bg-purple">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:2;" class="Rtable-cell cell-2 bg-red">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+						<div style="order:3;" class="Rtable-cell cell-3 bg-yellow">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell -->
+					  <div style="order:4;" class="Rtable-cell cell-4 bg-cyan Rtable-cell--foot">
+							<ul>
+								<li>Celery with peanut butter</li>
+								<li>Milk</li>
+							</ul>
+						</div><!-- .Rtable-cell--foot -->
+					</div>
+
 				</div><!-- .container -->
 			</section><!-- .section -->
 

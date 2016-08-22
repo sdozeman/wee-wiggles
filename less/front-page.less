@@ -16,7 +16,7 @@
     height: 650px;
     overflow: hidden;
     position: relative;
-    background: @main-gray;;
+    background: @main-gray;
   }//.hero
 
 
@@ -46,6 +46,17 @@
 
       .c-align { align-items: center; }
       .r-align { text-align: right; }//.r-align
+
+    @media @desktop-sml {
+      .headline {
+        font-size: 20px;
+
+          &.main {
+            font-size: 34px;
+            margin-bottom: 10px;
+          }//.main
+      }//.headline
+    }//@media
   }//.cta
 
 
@@ -270,6 +281,10 @@
     background: @white url(img/hours-rates@2x.jpg) bottom center no-repeat;
     background-size: 610px 565px;
 
+    @media @desktop-med, @desktop-sml {
+      background-size: 40% auto;
+    }
+
        > .container { max-width: 1320px; }
 
        .column {
@@ -445,6 +460,77 @@
   #h-menu {
     padding: 100px 0;
     background: @white;
+
+      .Rtable {
+        color: @white;
+        line-height: 140%;
+        padding-top: 40px;
+        padding-left: 40px;
+        text-align: center;
+
+          h3 {
+            font-size: 16px;
+            color: @main-gray;
+            text-transform: uppercase;
+          }//h3
+
+          .Rtable-cell {
+            z-index: 100;
+            padding: 15px;
+            overflow: visible;
+            position: relative;
+            align-content: center;
+
+              &.Rtable-cell--head { background: #f7f7f7; }
+              &.bg-red { background: @red; }
+              &.bg-yellow { background: #ffb946; }
+              &.bg-cyan { background: #85cfc0; }
+              &.bg-blue { background: #6fbaff; }
+              &.bg-purple { background: @purple2; }
+
+              ul {
+                .plain-list;
+                height: 100%;
+
+                  li {
+                    margin: 15px 0;
+                    line-height: 120%;
+                  }//li
+              }//ul
+
+              span {
+                top: 50%;
+                height: 0;
+                width: 65px;
+                left: -64px;
+                display: none;
+                .rotate(-90deg);
+                font-size: 14px;
+                color: @main-gray;
+                position: absolute;
+              }//span
+
+              &.first-col.cell-1,
+              &.first-col.cell-2,
+              &.first-col.cell-3,
+              &.first-col.cell-4 {
+
+                span { display: block; }
+
+                &:before {
+                  top: 0;
+                  bottom: 0;
+                  z-index: 0;
+                  content: "";
+                  left: -40px;
+                  width: 40px;
+                  display: block;
+                  position: absolute;
+                  background: #f7f7f7;
+                }//:before
+              }//.first-col
+          }//.Rtable-cell
+      }//.Rtable
   }//#h-menu
 
 
