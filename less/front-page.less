@@ -16,7 +16,7 @@
     height: 650px;
     overflow: hidden;
     position: relative;
-    background: @main-gray;;
+    background: @main-gray;
   }//.hero
 
 
@@ -46,6 +46,17 @@
 
       .c-align { align-items: center; }
       .r-align { text-align: right; }//.r-align
+
+    @media @desktop-sml {
+      .headline {
+        font-size: 20px;
+
+          &.main {
+            font-size: 34px;
+            margin-bottom: 10px;
+          }//.main
+      }//.headline
+    }//@media
   }//.cta
 
 
@@ -269,6 +280,10 @@
     min-height: 850px;
     background: @white url(img/hours-rates@2x.jpg) bottom center no-repeat;
     background-size: 610px 565px;
+
+    @media @desktop-med, @desktop-sml {
+      background-size: 40% auto;
+    }
 
        > .container { max-width: 1320px; }
 

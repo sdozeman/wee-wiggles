@@ -678,6 +678,32 @@ h6 {
   font-size: 20px;
   line-height: 21.5px;
 }
+@media only screen and (min-width: 1024px) and (max-width: 1167px) {
+  h1 {
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  h2 {
+    font-size: 44px;
+    line-height: 45.5px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 29.5px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 23.5px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 21.5px;
+  }
+  h6 {
+    font-size: 18px;
+    line-height: 19.5px;
+  }
+}
 a {
   color: #dc8ebd;
   text-decoration: none;
@@ -1241,6 +1267,11 @@ span.sub-headline.l-align {
 span.sub-headline.r-align {
   text-align: right;
 }
+@media only screen and (min-width: 1024px) and (max-width: 1167px) {
+  span.sub-headline {
+    font-size: 28px;
+  }
+}
 .squiggle {
   text-align: center;
   position: relative;
@@ -1509,7 +1540,7 @@ nav.main-navigation {
   z-index: 400;
   position: absolute;
   padding-left: 300px;
-  padding-right: 20px;
+  padding-right: 40px;
   font-family: 'aleoregular', times, serif;
 }
 nav.main-navigation ul {
@@ -1656,6 +1687,20 @@ nav.main-navigation ul > li:hover > a.ico:after {
 nav.main-navigation ul > li.active:before,
 nav.main-navigation ul > li:hover:before {
   height: 100%;
+}
+@media only screen and (min-width: 1168px) and (max-width: 1267px) {
+  nav.main-navigation ul li a {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1167px) {
+  nav.main-navigation ul li a {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
   nav.main-navigation {
@@ -1971,6 +2016,15 @@ footer .site-info span {
 .site-content .cta .r-align {
   text-align: right;
 }
+@media only screen and (min-width: 1024px) and (max-width: 1167px) {
+  .site-content .cta .headline {
+    font-size: 20px;
+  }
+  .site-content .cta .headline.main {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+}
 .site-content #h-about {
   background: #fff;
 }
@@ -2207,6 +2261,11 @@ footer .site-info span {
 }
 .site-content #h-rates:after {
   clear: both;
+}
+@media only screen and (min-width: 1168px) and (max-width: 1267px), only screen and (min-width: 1024px) and (max-width: 1167px) {
+  .site-content #h-rates {
+    background-size: 40% auto;
+  }
 }
 .site-content #h-rates > .container {
   max-width: 1320px;
@@ -3233,6 +3292,15 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   background: url(img/squiggle@2x.png) 0 0 no-repeat;
   background-size: 104px 8px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1167px) {
+  .flexslider .slides li > .container .caption p.headline.sub {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .flexslider .slides li > .container .caption p.headline.main {
+    font-size: 48px;
+  }
 }
 .flexslider .slides li > .container .caption .btn {
   margin-right: 0;
