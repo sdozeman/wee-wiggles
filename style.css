@@ -1986,7 +1986,7 @@ nav.main-navigation ul > li:hover:before {
   nav.main-navigation ul li a {
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1167px) {
@@ -2147,6 +2147,20 @@ header.site-header.scrolled .logo {
     top: -10px;
     opacity: 0;
     filter: alpha(opacity=0);
+  }
+}
+@media only screen and (min-width: 1168px) and (max-width: 1267px) {
+  header.site-header.scrolled nav.main-navigation ul > li a {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1167px) {
+  header.site-header.scrolled nav.main-navigation ul > li a {
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
@@ -2391,6 +2405,25 @@ footer .site-info span {
   position: relative;
   background: #666;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content #h-hero {
+    height: 450px;
+  }
+  .site-content #h-hero .flex-control-paging,
+  .site-content #h-hero .flex-direction-nav {
+    display: none;
+  }
+  .site-content #h-hero .slides li > .container .caption {
+    width: 40%;
+  }
+  .site-content #h-hero .slides li > .container .caption p.headline.sub {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .site-content #h-hero .slides li > .container .caption p.headline.main {
+    font-size: 48px;
+  }
+}
 .site-content .cta {
   padding: 35px 0;
   background-color: #c272af;
@@ -2424,6 +2457,19 @@ footer .site-info span {
   .site-content .cta .headline.main {
     font-size: 34px;
     margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content .cta {
+    padding: 20px 0;
+  }
+  .site-content .cta .headline {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .site-content .cta .headline.main {
+    font-size: 28px;
+    margin-bottom: 8px;
   }
 }
 .site-content #h-about {
@@ -2497,6 +2543,22 @@ footer .site-info span {
   margin: 0;
   font-size: 22px;
   color: #666;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content #h-about h1 {
+    font-size: 48px;
+  }
+  .site-content #h-about .block {
+    min-width: 150px;
+  }
+  .site-content #h-about .block h3 {
+    font-size: 18px;
+  }
+  .site-content #h-about .block:before {
+    -webkit-transform: translateX(-50%) scale(0.8);
+    -ms-transform: translateX(-50%) scale(0.8);
+    transform: translateX(-50%) scale(0.8);
+  }
 }
 .site-content #h-avail {
   overflow: hidden;
