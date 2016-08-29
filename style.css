@@ -3040,6 +3040,14 @@ footer .site-info span {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .site-content #h-schedule > .container:before,
+  .site-content #h-schedule > .container:after {
+    left: calc(100% - 40px);
+  }
+  .site-content #h-schedule > .container:after {
+    left: auto;
+    right: calc(100% - 40px);
+  }
   .site-content #h-schedule #schedule-list li {
     font-size: 18px;
     margin-bottom: 30px;
@@ -3136,6 +3144,42 @@ footer .site-info span {
   .site-content #h-menu {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .site-content #h-menu .Rtable {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+  .site-content #h-menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .site-content #h-menu .Rtable {
+    padding-left: 0;
+  }
+  .site-content #h-menu .Rtable .Rtable-cell {
+    padding: 15px 40px;
+  }
+  .site-content #h-menu .Rtable .Rtable-cell span {
+    left: -24px;
+    display: block;
+  }
+  .site-content #h-menu .Rtable .Rtable-cell.first-col[class*="cell-"]:before {
+    left: 0;
+  }
+  .site-content #h-menu .Rtable .Rtable-cell ul li {
+    margin: 10px 0;
+  }
+  .site-content #h-menu .Rtable .Rtable-cell:before {
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    content: "";
+    left: 0px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    background: #f7f7f7;
   }
 }
 .site-content #h-gallery {
@@ -4189,6 +4233,19 @@ html[xmlns] .flexslider .slides {
   -o-box-shadow: '' none 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: '' none 1px 2px rgba(0, 0, 0, 0.2);
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #carousel .slider__arrows {
+    left: -15px;
+    width: 120px;
+  }
+  #carousel .slider__arrows .slider__arrows-item {
+    width: 50px;
+    height: 50px;
+  }
+  #carousel .slider__arrows .slider__arrows-item.slider__arrows-item--right {
+    background-position: 100% 0;
+  }
+}
 #carousel.is-visible {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -4238,6 +4295,20 @@ html[xmlns] .flexslider .slides {
   filter: alpha(opacity=100);
   z-index: 10;
   transform: translate3d(0px, 0px, 0px);
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .slider-copy {
+    min-height: 390px;
+  }
+  .slider-copy .service {
+    padding-top: 0;
+  }
+  .slider-copy .service p {
+    padding-right: 20%;
+  }
+  .slider-copy .service h2 {
+    font-size: 32px;
+  }
 }
 /* Variables
 ================================== */

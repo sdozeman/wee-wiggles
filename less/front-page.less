@@ -575,7 +575,21 @@
           }//li
       }//#schedule-list
       @media @tablet {
-        > .container { padding-top: 50px; padding-bottom: 50px; }
+        > .container {
+          padding-top: 50px;
+          padding-bottom: 50px;
+
+          &:before,
+          &:after {
+            left: calc(~"100% - 40px");
+          }//:before, :after
+
+          &:after {
+            left: auto;
+            right: calc(~"100% - 40px");
+          }//:after
+      }//.container
+
         #schedule-list {
           li {
             font-size: 18px;
@@ -668,6 +682,48 @@
       @media @tablet {
         padding-top: 50px;
         padding-bottom: 50px;
+
+          .Rtable { padding-top: 20px; }
+      }//@tablet
+
+      @media @mobile-lg {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+          .Rtable {
+            padding-left: 0;
+
+              .Rtable-cell {
+                padding: 15px 40px;
+
+                  span {
+                    left: -24px;
+                    display: block;
+                  }//span
+
+                  &.first-col {
+                    &[class*="cell-"] {
+                      &:before { left: 0; }
+                    }//.cell-
+                  }//.first-col
+
+                  ul {
+                    li { margin: 10px 0; }
+                  }//ul
+
+                  &:before {
+                    top: 0;
+                    bottom: 0;
+                    z-index: 0;
+                    content: "";
+                    left: 0px;
+                    width: 40px;
+                    display: block;
+                    position: absolute;
+                    background: #f7f7f7;
+                  }//:before
+              }//.Rtable-cell
+          }//.Rtable
       }//@tablet
   }//#h-menu
 

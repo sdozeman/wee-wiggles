@@ -369,6 +369,7 @@
 <!-- BEGIN COLUMN TWO // TUESDAY-->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Tuesday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-yellow">
+							<span>Breakfast</span>
 							<ul>
 								<li>Egg</li>
 								<li>Homemade bread</li>
@@ -376,12 +377,14 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-cyan">
+							<span>AM Snack</span>
 							<ul>
 								<li>Applesauce with kale</li>
 								<li>Cheese</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-blue">
+							<span>Lunch</span>
 							<ul>
 								<li>Make-your-own veggie tortilla pizza</li>
 								<li>Strawberries</li>
@@ -389,6 +392,7 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-purple Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Celery with peanut butter</li>
 								<li>Milk</li>
@@ -399,6 +403,7 @@
 <!-- BEGIN COLUMN THREE // WEDNESDAY -->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Wednesday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-cyan">
+							<span>Breakfast</span>
 							<ul>
 								<li>Homemade pumpkin muffin</li>
 								<li>Banana</li>
@@ -406,12 +411,14 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-blue">
+							<span>AM Snack</span>
 							<ul>
 								<li>Grapes</li>
 								<li>Yogurt</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-purple">
+							<span>Lunch</span>
 							<ul>
 								<li>Whole-wheat penne</li>
 								<li>Tomato & meat sauce</li>
@@ -420,6 +427,7 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-red Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Carrots</li>
 								<li>Homemade yogurt dill dip</li>
@@ -431,6 +439,7 @@
 <!-- BEGIN COLUMN FOUR // THURSDAY-->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Thursday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-blue">
+							<span>Breakfast</span>
 							<ul>
 								<li>Cheerios</li>
 								<li>Strawberries</li>
@@ -438,11 +447,13 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-purple">
+							<span>AM Snack</span>
 							<ul>
 								<li>Fruit smoothie</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-red">
+							<span>Lunch</span>
 							<ul>
 								<li>Egg salad sandwich</li>
 								<li>Cucumber slices with homemade yogurt dill dip</li>
@@ -451,6 +462,7 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-yellow Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Homemade banana muffin</li>
 								<li>Milk</li>
@@ -461,17 +473,20 @@
 <!-- BEGIN COLUMN FIVE // FRIDAY -->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Friday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-purple">
+							<span>Breakfast</span>
 							<ul>
 								<li>Blueberry pancakes</li>
 								<li>Milk</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-red">
+							<span>AM Snack</span>
 							<ul>
 								<li>Homemade granola bar</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-yellow">
+							<span>Lunch</span>
 							<ul>
 								<li>Homemade chicken noodle soup with carrots</li>
 								<li>Homemade buns</li>
@@ -480,6 +495,7 @@
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-cyan Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Applesauce with kale</li>
 								<li>Cheese</li>
