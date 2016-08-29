@@ -592,32 +592,32 @@
 							</div><!-- ico -->
 						</div><!-- .grid -->
 
-						<form id="contact-form" class="FlowupLabels" method="post">
+						<form id="contact-form" class="FlowupLabels" method="POST" action="<?php bloginfo('stylesheet_directory'); ?>/mail.php">
 							<div class="grid grid-pad grid-pull">
 								<div class="col-6">
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_name">Your name</label>
-										<input type="text" class="fl_input required" id="c-name" name="name" required>
+										<input type="text" class="fl_input required" id="c-name" name="name" value="" required>
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_email">Your e-mail</label>
-										<input type="text" class="fl_input required" id="c-email" name="email" required>
+										<input type="text" class="fl_input required" id="c-email" name="email" value="" required>
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label" for="c_subject">Subject</label>
-										<input type="text" class="fl_input" id="c-subject" name="subject">
+										<input type="text" class="fl_input" id="c-subject" name="subject" value="">
 									</div><!-- .fl_wrap -->
 								</div><!-- .col-6 -->
 
 								<div class="col-6">
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c-mess">Message</label>
-										<textarea id="c-mess" class="fl_input" name="message" required></textarea>
+										<textarea id="c-mess" class="fl_input" name="message" value="" required></textarea>
 									</div><!-- fl_wrap -->
 								</div><!-- .col-6 -->
 							</div><!-- .grid -->
 
-							<button type="submit" class="btn red">Send Message</button>
+							<button type="submit" name="submit" class="btn red">Send Message</button>
               <input type="hidden" name="submitted" id="submitted" value="true" />
 						</form><!-- #contact-form -->
 						<div id="contactResponse"></div>

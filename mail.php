@@ -5,7 +5,7 @@
 	$message = $_POST['c-message'];
 
 	$formcontent=" From: $name \n Message: $message";
-	$recipient = "jacquelinespins@gmail.com";
+	$recipient = "sdozeman@gmail.com";
 	$subject = "Web form: $subject";
 	$mailheader = "From: $email \r\n";
 

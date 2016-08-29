@@ -939,6 +939,32 @@ h6 {
     line-height: 19.5px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  h1 {
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 45.5px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 29.5px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 23.5px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 21.5px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+}
 a {
   color: #dc8ebd;
   text-decoration: none;
@@ -1507,6 +1533,12 @@ span.sub-headline.r-align {
     font-size: 28px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  span.sub-headline {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+}
 .squiggle {
   text-align: center;
   position: relative;
@@ -1534,6 +1566,14 @@ span.sub-headline.r-align {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .squiggle {
+    padding-bottom: 40px;
+  }
+  .squiggle:after {
+    bottom: 15px;
+  }
 }
 label {
   display: block;
@@ -1567,7 +1607,7 @@ textarea,
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 50px;
-  padding: 12px;
+  padding: 5px 12px;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 19px;
@@ -2483,6 +2523,12 @@ footer .site-info span {
   text-align: center;
   padding-bottom: 90px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content #h-about > .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .site-content #h-about > .container:before,
 .site-content #h-about > .container:after {
   top: 0;
@@ -2503,6 +2549,12 @@ footer .site-info span {
   display: block;
   font-size: 30px;
   margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content #h-about span {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
 }
 .site-content #h-about p {
   font-size: 18px;
@@ -2547,6 +2599,8 @@ footer .site-info span {
 @media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
   .site-content #h-about h1 {
     font-size: 48px;
+    margin-bottom: 15px;
+    padding-bottom: 50px;
   }
   .site-content #h-about .block {
     min-width: 150px;
@@ -2632,12 +2686,52 @@ footer .site-info span {
   margin-top: 10px;
   text-align: right;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content #h-avail .availability .container.xsml {
+    padding: 40px 20px;
+  }
+  .site-content #h-avail .availability p {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 auto 20px;
+  }
+  .site-content #h-avail .availability blockquote {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -80px;
+    padding-left: 80px;
+    padding-right: 0;
+    margin-right: 0;
+    font-style: italic;
+    line-height: 150%;
+    -webkit-border-radius: 30px 0 0 30px;
+    -moz-border-radius: 30px 0 0 30px;
+    -ms-border-radius: 30px 0 0 30px;
+    -o-border-radius: 30px 0 0 30px;
+    border-radius: 30px 0 0 30px;
+  }
+  .site-content #h-avail .availability blockquote:after {
+    width: 40px;
+  }
+  .site-content #h-avail .availability blockquote:before {
+    left: 20px;
+  }
+  .site-content #h-avail .availability blockquote .source {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
 .site-content #h-additional {
   padding: 45px 0;
   min-height: 500px;
   background: url(img/background-02.png) 0 0 repeat;
   background-size: 1100px 400px;
   background-attachment: fixed;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-additional {
+    padding-bottom: 0;
+  }
 }
 .site-content #h-bio {
   min-height: 500px;
@@ -2697,6 +2791,21 @@ footer .site-info span {
 }
 .site-content #h-bio .bio-grid .ico.search:before {
   background-position: -570px -280px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-bio {
+    padding-bottom: 0;
+  }
+  .site-content #h-bio .bio-grid .ico {
+    float: none;
+    min-width: 200px;
+    display: inline-block;
+  }
+  .site-content #h-bio .img-cap {
+    top: 275px;
+    right: -10px;
+    bottom: auto;
+  }
 }
 .site-content #h-rates {
   padding: 100px 0;
@@ -2788,6 +2897,33 @@ footer .site-info span {
   display: block;
   line-height: 140%;
   font-size: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-rates {
+    padding: 50px 0;
+    min-height: 450px;
+    background-size: 50% auto;
+  }
+  .site-content #h-rates .column {
+    padding: 0px;
+    font-size: 18px;
+  }
+  .site-content #h-rates .column span.fancy:before {
+    display: none;
+  }
+  .site-content #h-rates .column span.fancy:after {
+    left: 0;
+  }
+  .site-content #h-rates .column.hours {
+    padding-right: 100px;
+  }
+  .site-content #h-rates .column.rates {
+    padding-left: 100px;
+  }
+  .site-content #h-rates .column.rates span.fancy:after {
+    right: 0;
+    left: auto;
+  }
 }
 .site-content #h-schedule {
   overflow: hidden;
@@ -2899,6 +3035,19 @@ footer .site-info span {
   border-radius: 10px;
   right: calc(50% + 90px);
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-schedule > .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .site-content #h-schedule #schedule-list li {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .site-content #h-schedule #schedule-list li span {
+    font-size: 15px;
+  }
+}
 .site-content #h-menu {
   padding: 100px 0;
   background: #fff;
@@ -2983,6 +3132,12 @@ footer .site-info span {
   position: absolute;
   background: #f7f7f7;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .site-content #h-gallery {
   position: relative;
   padding: 120px 0 100px;
@@ -3011,6 +3166,15 @@ footer .site-info span {
 }
 .site-content #h-gallery > .container {
   max-width: 1080px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-gallery {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  .site-content #h-gallery > .container {
+    overflow: hidden;
+  }
 }
 .site-content #h-contact {
   padding: 100px 0;
@@ -3076,6 +3240,15 @@ footer .site-info span {
 }
 .site-content #h-contact form {
   text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .site-content #h-contact #contactResponse {
+    display: none;
+  }
 }
 .grid {
   list-style-type: none;
@@ -3374,6 +3547,77 @@ footer .site-info span {
 }
 .image-row .column.text h2.headline:not(.squiggle) {
   margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .image-row {
+    padding: 50px 0;
+    min-height: 550px;
+  }
+  .image-row#target4 {
+    margin-top: 50px;
+  }
+  .image-row .column.text {
+    z-index: 500;
+  }
+  .image-row .column.image img.p-image {
+    max-width: 100% !important;
+  }
+  .image-row .column.image.image-1 img.p-image {
+    right: 0;
+    top: 40px;
+  }
+  .image-row .column.image.image-1 img.p-background {
+    left: -100px;
+    top: -100px;
+  }
+  .image-row .column.image.image-1 img.p-foreground {
+    left: 0px;
+    top: 100px;
+  }
+  .image-row .column.image.image-2 img.p-image {
+    left: 0;
+    top: 40px;
+  }
+  .image-row .column.image.image-2 img.p-background {
+    right: 30px;
+    top: -40px;
+  }
+  .image-row .column.image.image-2 img.p-foreground {
+    right: 15px;
+    top: 40px;
+  }
+  .image-row .column.image.image-3 img.p-image {
+    right: 0;
+    top: 40px;
+  }
+  .image-row .column.image.image-3 img.p-background {
+    left: 40px;
+    top: 0px;
+    max-width: 570px;
+  }
+  .image-row .column.image.image-3 img.p-foreground {
+    left: -20px;
+    top: 90px;
+  }
+  .image-row .column.image.image-4 {
+    min-height: 680px;
+  }
+  .image-row .column.image.image-4 img.p-image {
+    right: 0px;
+    left: auto;
+    top: 0px;
+    max-width: 100%;
+  }
+  .image-row .column.image.image-4 img.p-background {
+    right: 0px;
+    top: -120px;
+    max-width: 120%;
+  }
+  .image-row .column.image.image-4 img.p-foreground {
+    right: -20px;
+    top: 30px;
+    max-width: 100%;
+  }
 }
 .btn,
 button,

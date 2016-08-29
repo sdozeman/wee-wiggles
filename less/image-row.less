@@ -88,4 +88,54 @@
             h2.headline:not(.squiggle) { margin-bottom: 0; }
         }//.text
     }//.column
+
+    @media @tablet, @mobile-lg, @mobile {
+      padding: 50px 0;
+      min-height: 550px;
+
+      &#target4 { margin-top: 50px; }
+
+        .column {
+            &.text { z-index: 500; }
+
+            &.image {
+
+              img.p-image { max-width: 100% !important; }
+
+              &.image-1 {
+                img {
+                  &.p-image { right: 0; top: 40px; }
+                  &.p-background { left: -100px; top: -100px; }
+                  &.p-foreground { left: 0px; top: 100px; }
+                }//img
+              }//&.image-1
+
+              &.image-2 {
+                img {
+                  &.p-image { left: 0; top: 40px; }
+                  &.p-background { right: 30px; top: -40px; }
+                  &.p-foreground { right: 15px; top: 40px; }
+                }//img
+              }//&.image-2
+
+              &.image-3 {
+                img {
+                  &.p-image { right: 0; top: 40px; }
+                  &.p-background { left: 40px; top: 0px; max-width: 570px; }
+                  &.p-foreground { left: -20px; top: 90px; }
+                }//img
+              }//&.image-3
+
+              &.image-4 {
+                min-height: 680px;
+
+                  img {
+                    &.p-image { right: 0px; left: auto; top: 0px; max-width: 100%; }
+                    &.p-background { right: 0px; top: -120px; max-width: 120%; }
+                    &.p-foreground { right: -20px; top: 30px; max-width: 100%; }
+                  }//img
+              }//.image-4
+            }//.image
+        }//.column
+    }//@media
 }//.image-row
