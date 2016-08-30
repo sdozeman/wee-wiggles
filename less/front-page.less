@@ -33,6 +33,30 @@
           .slides li > .container .caption p.headline.sub { font-size: 32px; margin-bottom: 10px; }
           .slides li > .container .caption p.headline.main { font-size: 48px; }
       }//@media
+
+      @media @mobile-lg, @mobile {
+        .slides {
+          li {
+            > .container {
+              padding: 0;
+              align-items: flex-end;
+
+                .caption {
+                  padding: 20px 20px 0;
+                  background: rgba(0, 0, 0, 0.35);
+                  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+                  .box-shadow(0 0 15px 5px rgba(0, 0, 0, 0.25));
+
+                    &.right, &.left {
+                      width: 100%;
+                      margin-left: 0;
+                      margin-right: 0;
+                    }//.right, .left
+                }//.captiom
+            }//.container
+          }//li
+        }//.slides
+      }//@mobile
   }//.hero
 
 
@@ -81,8 +105,17 @@
           margin-bottom: 5px;
 
             &.main { font-size: 28px; margin-bottom: 8px; }
-        }
-    }
+        }//.headline
+    }//@media
+
+    @media @mobile-lg, @mobile {
+      padding: 25px 0 30px;
+
+        .r-align,
+        .fgrid-cell[class*="col-"] { text-align: center; }
+
+        .headline.main { margin-bottom: 15px; }
+    }//@mobile
   }//.cta
 
 
@@ -180,8 +213,12 @@
           &:before {
             .transform(translateX(-50%) scale(.8));
           }
-      }
+      }//.block
     }//@media
+
+    @media @mobile-lg, @mobile {
+      .block { min-width: 200px; }
+    }
   }//#home-about
 
 
@@ -197,7 +234,6 @@
         padding-top: 50px;
         padding-left: 80px;
         padding-bottom: 50px;
-
       }//.xsml
 
       .availability {
@@ -248,18 +284,13 @@
         }//blockquote
 
         @media @tablet, @mobile-lg, @mobile {
-
-          .container.xsml {
-            padding: 40px 20px;
-          }//.container
+          .container.xsml { padding: 40px 20px; }//.container
 
           p {
             font-size: 16px;
             line-height: 150%;
             margin: 0 auto 20px;
           }//p
-
-
 
           blockquote {
             margin-top: 25px;
@@ -277,6 +308,10 @@
 
                 .source { font-size: 18px; margin-top: 0; }
           }//blockquote
+        }//@tablet
+
+        @media @mobile-lg, @mobile {
+          .container.xsml { padding: 30px 20px; }
         }
       }//.availability
   }//#home-avail
@@ -351,7 +386,7 @@
           }//.col-2
       }//.bio-grid
 
-      @media @tablet {
+      @media @tablet, @mobile-lg, @mobile {
         padding-bottom: 0;
 
           .bio-grid {
@@ -368,6 +403,17 @@
             bottom: auto;
           }//.img-cap
       }//@tablet
+
+      @media @mobile-lg, @mobile {
+        .img-cap {
+          left: 50%;
+          top: auto;
+          right: auto;
+          bottom: 35px;
+          padding: 5px 40px;
+          .translateX(-50%);
+        }
+      }//@mobile
   }//#h-bio
 
 
@@ -574,7 +620,7 @@
               }//span
           }//li
       }//#schedule-list
-      @media @tablet {
+      @media @tablet, @mobile-lg, @mobile {
         > .container {
           padding-top: 50px;
           padding-bottom: 50px;
@@ -599,6 +645,8 @@
           }//li
         }//#schedule-list
       }//@tablet
+
+      @media @mobile-lg, @mobile {}
   }//#h-schedule
 
 
@@ -686,7 +734,7 @@
           .Rtable { padding-top: 20px; }
       }//@tablet
 
-      @media @mobile-lg {
+      @media @mobile-lg, @mobile {
         padding-top: 50px;
         padding-bottom: 50px;
 
@@ -794,12 +842,27 @@
 
       form { text-align: center; }//form
 
-      @media @tablet {
+      @media @tablet, @mobile-lg, @mobile {
         padding-top: 50px;
         padding-bottom: 50px;
 
           #contactResponse { display: none; }
       }//@tablet
+
+      @media @mobile-lg, @mobile {
+        .grid {
+          .col-6 {
+            width: 100%;
+
+              .fl_wrap {
+                margin-bottom: 20px;
+
+                  &.tall { height: 230px; }
+              }
+          }//.col-6
+        }//.grid
+      }//@mobile
+
   }//#h-contact
 
 }//.body-content

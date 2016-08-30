@@ -626,7 +626,7 @@
 								</div><!-- .col-6 -->
 
 								<div class="col-6">
-									<div class="fl_wrap">
+									<div class="fl_wrap tall">
 										<label class="fl_label required" for="c-mess">Message</label>
 										<textarea id="c-mess" class="fl_input" name="message" value="" required></textarea>
 									</div><!-- fl_wrap -->
