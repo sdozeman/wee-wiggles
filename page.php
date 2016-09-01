@@ -12,7 +12,7 @@
  * @package Wee_Wiggles
  */
 
-get_header(); ?>
+	get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -87,117 +87,118 @@ get_header(); ?>
 					<div class="block ico hrt"><h3>Health & Safety</h3></div>
 
 				</div><!-- .container -->
+
+
+
+	<!-- START AVAILABILITY SECTION -->
+				<article id="h-avail">
+					<div class="fgrid fgrid--gutters">
+						<div class="fgrid-cell col-5">
+							<div class="flex-wrap" style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/about-availability.jpg) center center no-repeat; background-size: cover;">
+							</div><!-- .flex-wrap -->
+						</div><!-- .col-4 -->
+
+						<div class="fgrid-cell col-7 availability">
+							<div class="flex-wrap">
+								<div class="container xsml">
+									<span class="sub-headline l-align">2016/2017</span>
+									<h2 class="squiggle l-align">Availability</h2>
+									<p>I operate Wee Wiggles Inc. from the end of August to the end of June (corresponding to the CBE traditional calendar—ideal for teachers’ families!).
+										I do not charge fees to hold spots over the summer like other dayhomes, as I take summers off.</p>
+									<p>Wee Wiggles Inc. currently has <strong>two full-time spots available for children aged 2-3 for the 2016/2017 school year</strong>.
+										I cannot provide care for school-aged children, as I currently do not offer drop off/pick-up services.
+										When the new Education Act is in effect, I will be able to care for children up to age 5. See below for when the new regulations are expected to take effect.</p>
+
+									<blockquote>
+										“Under our current School Act regulations, children must be at least four years old on or before March 1 to start kindergarten in September of the same calendar year.<br><br>
+										*Please note: The new Education Act was expected to take effect in the 2016-17 school year, but has been delayed by Alberta Education.
+										The new regulation states that starting in the 2018-19 school year, children must be at least five years old by Dec. 31, 2018 to start kindergarten in September 2018.
+										Our kindergarten calculator assumes that the Education Act will be in effect for the 2018-19 school year.”
+
+										<span class="source">via <a href="#">Calgary Board of Education</a></span>
+									</blockquote>
+
+									<p>Please <a href="#h-contact">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
+								</div><!-- .container -->
+							</div><!-- .flex-wrap -->
+						</div><!-- .col-8 -->
+					</div><!-- .fgrid -->
+				</article><!-- #home-avail -->
+
+
+	<!-- START AVAILABILITY SECTION -->
+				<article id="h-additional">
+					<div class="container">
+
+
+				<!-- BEGIN FIRST ROW -->
+						<div class="image-row image-right" id="target1">
+							<div class="column text">
+								<span class="sub-headline l-align">Fostering</span>
+								<h2 class="squiggle l-align headline">early-learning</h2>
+
+								<p>It is my core belief that <strong>children should learn through play and discovery</strong>.
+									As a teacher, I found class-size to be the biggest indicator of success in my classrooms.
+									As such, I will be keeping my dayhome low-ratio to maximize the amount of time I can spend with each child.
+									I strive to create lifelong learners in a <strong>warm, safe,
+									and engaging</strong> environment for children to explore their surroundings.</p>
+
+								<p>Every month we will explore a theme to do with the world around us.
+									Every week I will create activities based on the expressed interests from the week before for the children in my care.
+									Every day I will use brightwheel© to report to parents when children are checked in and out, when naps begin and end,
+									daily activities, and the type and amount of food eaten.</p>
+							</div><!-- .column -->
+							<div class="column image right image-1">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-B@2x.png" class="p-background" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-earlylearning@2x.jpg" class="p-image" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-F@2x.png" class="p-foreground" />
+							</div><!-- .column -->
+						</div><!-- .image-row -->
+
+
+				<!-- BEGIN SECOND ROW -->
+						<div class="image-row image-left" id="target2">
+							<div class="column text">
+								<h2 class="l-align headline">Nutritious</h2>
+								<span class="sub-headline squiggle l-align">meals & snacks</span>
+
+								<p>Being a former Foods teacher, I place an enormous value on nutritious meals and snacks.
+									I prepare almost all of my food from scratch and will involve children in both meal preparation and clean-up.
+									I will provide a healthy breakfast, lunch, and two snacks per day. </p>
+							</div><!-- .column -->
+							<div class="column image left image-2">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-B@2x.png" class="p-background" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-earlylearning@2x.jpg" class="p-image" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-F@2x.png" class="p-foreground" />
+							</div><!-- .column -->
+						</div><!-- .image-row -->
+
+
+				<!-- BEGIN THIRD ROW -->
+						<div class="image-row image-right" id="target3">
+							<div class="column text">
+								<span class="sub-headline l-align">Health</span>
+								<h2 class="squiggle l-align headline">& safety</h2>
+
+								<p><strong>Health and safety are of utmost importance to me</strong>. I will never drive with the children in my care.
+									I also will never post photos of children online or make my address freely available on the internet.
+									Only children with up-to-date vaccinations will be allowed to attend.
+									I also will be sanitizing toys weekly (at a minimum) and will ensure that children who are sick are kept or sent home.
+									Children will only be released to parents or identified emergency contacts.
+									I also have a video monitor in my playroom that records 24h of footage.</p>
+							</div><!-- .column -->
+							<div class="column image right image-3">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-B@2x.png" class="p-background" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-health-safety@2x.jpg" class="p-image" />
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-F@2x.png" class="p-foreground" />
+							</div><!-- .column -->
+						</div><!-- .image-row -->
+
+
+
+					</div><!-- .container -->
+				</article><!-- h-additional -->
 			</section><!-- #home-about -->
-
-
-<!-- START AVAILABILITY SECTION -->
-			<section id="h-avail">
-				<div class="fgrid fgrid--gutters">
-					<div class="fgrid-cell col-5">
-						<div class="flex-wrap" style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/about-availability.jpg) center center no-repeat; background-size: cover;">
-						</div><!-- .flex-wrap -->
-					</div><!-- .col-4 -->
-
-					<div class="fgrid-cell col-7 availability">
-						<div class="flex-wrap">
-							<div class="container xsml">
-								<span class="sub-headline l-align">2016/2017</span>
-								<h2 class="squiggle l-align">Availability</h2>
-								<p>I operate Wee Wiggles Inc. from the end of August to the end of June (corresponding to the CBE traditional calendar—ideal for teachers’ families!).
-									I do not charge fees to hold spots over the summer like other dayhomes, as I take summers off.</p>
-								<p>Wee Wiggles Inc. currently has <strong>two full-time spots available for children aged 2-3 for the 2016/2017 school year</strong>.
-									I cannot provide care for school-aged children, as I currently do not offer drop off/pick-up services.
-									When the new Education Act is in effect, I will be able to care for children up to age 5. See below for when the new regulations are expected to take effect.</p>
-
-								<blockquote>
-									“Under our current School Act regulations, children must be at least four years old on or before March 1 to start kindergarten in September of the same calendar year.<br><br>
-									*Please note: The new Education Act was expected to take effect in the 2016-17 school year, but has been delayed by Alberta Education.
-									The new regulation states that starting in the 2018-19 school year, children must be at least five years old by Dec. 31, 2018 to start kindergarten in September 2018.
-									Our kindergarten calculator assumes that the Education Act will be in effect for the 2018-19 school year.”
-
-									<span class="source">via <a href="#">Calgary Board of Education</a></span>
-								</blockquote>
-
-								<p>Please <a href="#h-contact">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
-							</div><!-- .container -->
-						</div><!-- .flex-wrap -->
-					</div><!-- .col-8 -->
-				</div><!-- .fgrid -->
-			</section><!-- #home-avail -->
-
-
-<!-- START AVAILABILITY SECTION -->
-			<section id="h-additional">
-				<div class="container">
-
-
-			<!-- BEGIN FIRST ROW -->
-					<div class="image-row image-right" id="target1">
-						<div class="column text">
-							<span class="sub-headline l-align">Fostering</span>
-							<h2 class="squiggle l-align headline">early-learning</h2>
-
-							<p>It is my core belief that <strong>children should learn through play and discovery</strong>.
-								As a teacher, I found class-size to be the biggest indicator of success in my classrooms.
-								As such, I will be keeping my dayhome low-ratio to maximize the amount of time I can spend with each child.
-								I strive to create lifelong learners in a <strong>warm, safe,
-								and engaging</strong> environment for children to explore their surroundings.</p>
-
-							<p>Every month we will explore a theme to do with the world around us.
-								Every week I will create activities based on the expressed interests from the week before for the children in my care.
-								Every day I will use brightwheel© to report to parents when children are checked in and out, when naps begin and end,
-								daily activities, and the type and amount of food eaten.</p>
-						</div><!-- .column -->
-						<div class="column image right image-1">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-B@2x.png" class="p-background" />
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-earlylearning@2x.jpg" class="p-image" />
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-F@2x.png" class="p-foreground" />
-						</div><!-- .column -->
-					</div><!-- .image-row -->
-
-
-			<!-- BEGIN SECOND ROW -->
-					<div class="image-row image-left" id="target2">
-						<div class="column text">
-							<h2 class="l-align headline">Nutritious</h2>
-							<span class="sub-headline squiggle l-align">meals & snacks</span>
-
-							<p>Being a former Foods teacher, I place an enormous value on nutritious meals and snacks.
-								I prepare almost all of my food from scratch and will involve children in both meal preparation and clean-up.
-								I will provide a healthy breakfast, lunch, and two snacks per day. </p>
-						</div><!-- .column -->
-						<div class="column image left image-2">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-B@2x.png" class="p-background" />
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-earlylearning@2x.jpg" class="p-image" />
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-F@2x.png" class="p-foreground" />
-						</div><!-- .column -->
-					</div><!-- .image-row -->
-
-
-			<!-- BEGIN THIRD ROW -->
-					<div class="image-row image-right" id="target3">
-						<div class="column text">
-							<span class="sub-headline l-align">Health</span>
-							<h2 class="squiggle l-align headline">& safety</h2>
-
-							<p><strong>Health and safety are of utmost importance to me</strong>. I will never drive with the children in my care.
-								I also will never post photos of children online or make my address freely available on the internet.
-								Only children with up-to-date vaccinations will be allowed to attend.
-								I also will be sanitizing toys weekly (at a minimum) and will ensure that children who are sick are kept or sent home.
-								Children will only be released to parents or identified emergency contacts.
-								I also have a video monitor in my playroom that records 24h of footage.</p>
-						</div><!-- .column -->
-						<div class="column image right image-3">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-B@2x.png" class="p-background" />
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-health-safety@2x.jpg" class="p-image" />
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-F@2x.png" class="p-foreground" />
-						</div><!-- .column -->
-					</div><!-- .image-row -->
-
-
-
-				</div><!-- .container -->
-			</section><!-- h-additional -->
 
 
 <!-- START BIO SECTION -->
@@ -368,6 +369,7 @@ get_header(); ?>
 <!-- BEGIN COLUMN TWO // TUESDAY-->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Tuesday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-yellow">
+							<span>Breakfast</span>
 							<ul>
 								<li>Egg</li>
 								<li>Homemade bread</li>
@@ -375,12 +377,14 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-cyan">
+							<span>AM Snack</span>
 							<ul>
 								<li>Applesauce with kale</li>
 								<li>Cheese</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-blue">
+							<span>Lunch</span>
 							<ul>
 								<li>Make-your-own veggie tortilla pizza</li>
 								<li>Strawberries</li>
@@ -388,6 +392,7 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-purple Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Celery with peanut butter</li>
 								<li>Milk</li>
@@ -398,6 +403,7 @@ get_header(); ?>
 <!-- BEGIN COLUMN THREE // WEDNESDAY -->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Wednesday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-cyan">
+							<span>Breakfast</span>
 							<ul>
 								<li>Homemade pumpkin muffin</li>
 								<li>Banana</li>
@@ -405,12 +411,14 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-blue">
+							<span>AM Snack</span>
 							<ul>
 								<li>Grapes</li>
 								<li>Yogurt</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-purple">
+							<span>Lunch</span>
 							<ul>
 								<li>Whole-wheat penne</li>
 								<li>Tomato & meat sauce</li>
@@ -419,6 +427,7 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-red Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Carrots</li>
 								<li>Homemade yogurt dill dip</li>
@@ -430,6 +439,7 @@ get_header(); ?>
 <!-- BEGIN COLUMN FOUR // THURSDAY-->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Thursday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-blue">
+							<span>Breakfast</span>
 							<ul>
 								<li>Cheerios</li>
 								<li>Strawberries</li>
@@ -437,11 +447,13 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-purple">
+							<span>AM Snack</span>
 							<ul>
 								<li>Fruit smoothie</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-red">
+							<span>Lunch</span>
 							<ul>
 								<li>Egg salad sandwich</li>
 								<li>Cucumber slices with homemade yogurt dill dip</li>
@@ -450,6 +462,7 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-yellow Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Homemade banana muffin</li>
 								<li>Milk</li>
@@ -460,17 +473,20 @@ get_header(); ?>
 <!-- BEGIN COLUMN FIVE // FRIDAY -->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Friday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-purple">
+							<span>Breakfast</span>
 							<ul>
 								<li>Blueberry pancakes</li>
 								<li>Milk</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-red">
+							<span>AM Snack</span>
 							<ul>
 								<li>Homemade granola bar</li>
 							</ul>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-yellow">
+							<span>Lunch</span>
 							<ul>
 								<li>Homemade chicken noodle soup with carrots</li>
 								<li>Homemade buns</li>
@@ -479,6 +495,7 @@ get_header(); ?>
 							</ul>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-cyan Rtable-cell--foot">
+							<span>PM Snack</span>
 							<ul>
 								<li>Applesauce with kale</li>
 								<li>Cheese</li>
@@ -591,32 +608,33 @@ get_header(); ?>
 							</div><!-- ico -->
 						</div><!-- .grid -->
 
-						<form id="contact-form" class="FlowupLabels" method="post">
+						<form id="contact-form" class="FlowupLabels" method="POST" action="<?php bloginfo('stylesheet_directory'); ?>/mail.php">
 							<div class="grid grid-pad grid-pull">
 								<div class="col-6">
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_name">Your name</label>
-										<input type="text" class="fl_input required" id="c-name" name="name" required>
+										<input type="text" class="fl_input required" id="c-name" name="name" value="" required>
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label required" for="c_email">Your e-mail</label>
-										<input type="text" class="fl_input required" id="c-email" name="email" required>
+										<input type="text" class="fl_input required" id="c-email" name="email" value="" required>
 									</div><!-- .fl_wrap -->
 									<div class="fl_wrap">
 										<label class="fl_label" for="c_subject">Subject</label>
-										<input type="text" class="fl_input" id="c-subject" name="subject">
+										<input type="text" class="fl_input" id="c-subject" name="subject" value="">
 									</div><!-- .fl_wrap -->
 								</div><!-- .col-6 -->
 
 								<div class="col-6">
-									<div class="fl_wrap">
+									<div class="fl_wrap tall">
 										<label class="fl_label required" for="c-mess">Message</label>
-										<textarea id="c-mess" class="fl_input" name="message" required></textarea>
+										<textarea id="c-mess" class="fl_input" name="message" value="" required></textarea>
 									</div><!-- fl_wrap -->
 								</div><!-- .col-6 -->
 							</div><!-- .grid -->
 
-							<button type="submit" class="btn red">Send Message</button>
+							<button type="submit" name="submit" class="btn red">Send Message</button>
+              <input type="hidden" name="submitted" id="submitted" value="true" />
 						</form><!-- #contact-form -->
 						<div id="contactResponse"></div>
 
@@ -625,25 +643,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$subject = $_POST['subject'];
-		$message = $_POST['message'];
-
-		$formcontent=" From: $name \n Message: $message";
-		$recipient = "jacquelinespins@gmail.com";
-		$subject = "Web form: $subject";
-		$mailheader = "From: $email \r\n";
-
-		if( mail($recipient, $subject, $formcontent, $mailheader) )
-		{
-				echo "<h2>Thank you for your message!</h2>";
-		}
-		else
-		{
-				echo "<h2>Sorry, there has been an error.</h2>";
-		}
-
-get_footer();
+<?php get_footer(); ?>

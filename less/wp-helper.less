@@ -4,8 +4,8 @@
 #wp-admin-bar-new-content,
 #wp-admin-bar-wpseo-menu { display: none; }
 
-@wpa-bp:  ~"only screen and (max-width: 781px)";
-
+@wpa-bp1:  ~"only screen and (max-width: 781px)";
+@wpa-bp2:  ~"only screen and (max-width: 600px)";
 
 // Fixed Header Adjustments
 body.admin-bar {
@@ -19,7 +19,9 @@ body.admin-bar {
     #wpadminbar {}//#wpadminbar
   }//@tablet
 
-  @media @wpa-bp {
+  @media @wpa-bp1 {
     .site-header { top: 46px !important; }
   }//@wpa-bp
+
+  @media @wpa-bp2 { #wpadminbar { position: fixed !important; } }
 }//.admin-bar

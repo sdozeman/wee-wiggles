@@ -28,12 +28,15 @@ jQuery(document).ready(function($){
     function onScroll(event){
       var scrollPosition = $(document).scrollTop();
       $('nav a').each(function () {
-        var currentLink = $(this);
-        var refElement = $(currentLink.attr("href"));
+        var currentLink = $(this),
+            menu = $('.main-navigation .menu'),
+            refElement = $(currentLink.attr("href")),
+            refElementId = refElement.attr('id');
 
         if (refElement.position().top - 100 <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
           $('nav ul li').removeClass("active");
           currentLink.parent('li').addClass("active");
+          //menu.addClass();
         }
         else{
           currentLink.parent('li').removeClass("active");
@@ -42,41 +45,39 @@ jQuery(document).ready(function($){
     }
 
   // Hero Slider
-  $('.flexslider').flexslider({
-    animation: "fade"
-  });
+  $('.flexslider').flexslider({ animation: "fade" });
+
+
 
   // Contact form
-  $("#contact-form").submit(function(event)
-  {
+  $("#contact-form").submit(function(event) {
       /* stop form from submitting normally */
       event.preventDefault();
 
       /* get some values from elements on the page: */
       var $form = $( this ),
           $submit = $form.find( 'button[type="submit"]' ),
-          name_value = $form.find( 'input[name="name"]' ).val(),
-          email_value = $form.find( 'input[name="email"]' ).val(),
-          message_value = $form.find( 'textarea[name="message"]' ).val(),
+          name_value = $form.find( 'input[name="c-name"]' ).val(),
+          email_value = $form.find( 'input[name="c-email"]' ).val(),
+          message_value = $form.find( 'textarea[name="c-mess"]' ).val(),
           url = $form.attr('action');
 
       /* Send the data using post */
       var posting = $.post( url, {
-                        name: name_value,
-                        email: email_value,
-                        message: message_value
-                    });
+          name: name_value,
+          email: email_value,
+          message: message_value
+      });
 
-      posting.done(function( data )
-      {
-          /* Put the results in a div */
-          $( "#contactResponse" ).html(data);
+      posting.done(function( data ) {
+        /* Put the results in a div */
+        $( "#contactResponse" ).html(data);
 
-          /* Change the button text. */
-          $submit.text('MESSAGE SENT');
+        /* Change the button text. */
+        $submit.text('MESSAGE SENT');
 
-          /* Disable the button. */
-          $submit.attr("disabled", true);
+        /* Disable the button. */
+        $submit.attr("disabled", true);
       });
  });
 
@@ -90,6 +91,44 @@ jQuery(document).ready(function($){
   // Fancy Input labels
   // https://github.com/ENFOS/FlowupLabels.js?files=1
   $('.FlowupLabels').FlowupLabels();
+
+  // Mobile navigation
+	var menuOpen = false,
+		  mainNav = $('.main-navigation'),
+		  menuButton = $('.menu-btn'),
+  		closeNav = function(){
+				menuButton.removeClass('active');
+				mainNav.removeClass('active');
+        mainNav.find('li').removeClass('anim');
+				menuOpen = false;
+  		},
+  		menuBtnFn = function(){
+				menuButton.bind( 'touchstart, click', function(event){
+					event.stopPropagation();
+					event.preventDefault();
+
+					if (menuOpen) {
+						closeNav();
+					} else {
+						mainNav.addClass('active');
+						$(this).addClass('active');
+
+            mainNav.find('li').each(function(i) {
+              var $el = $(this);
+              setTimeout(function() {
+                $el.addClass('anim');
+              }, i * 33);
+            });
+						menuOpen = true;
+					}
+				});
+  		};
+
+  	menuBtnFn();
+
+    $('.main-navigation').find('a').on('click', function(){
+      closeNav();
+    });
 });
 
 

@@ -40,6 +40,15 @@ h6{ font-size: @font-size-h6; line-height: (@font-size-h6+@line-height); }
   h6{ font-size: @font-size-h6 - 2; line-height: (@font-size-h6 - 2 + @line-height); }
 }
 
+@media @tablet, @mobile-lg, @mobile {
+  h1{ font-size: @font-size-h1 - 10; line-height: (@font-size-h1 - 10 + @line-height); }
+  h2{ font-size: @font-size-h2 - 8; line-height: (@font-size-h2 - 4 + @line-height); }
+  h3{ font-size: @font-size-h3 - 6; line-height: (@font-size-h3 - 4 + @line-height); }
+  h4{ font-size: @font-size-h4 - 6; line-height: (@font-size-h4 - 4 + @line-height); }
+  h5{ font-size: @font-size-h5 - 4; line-height: (@font-size-h5 - 2 + @line-height); }
+  h6{ font-size: @font-size-h6 - 4; line-height: (@font-size-h6 - 2 + @line-height); }
+}
+
 
 a {
     color: @link-color;
@@ -507,9 +516,8 @@ span.sub-headline {
     &.l-align { text-align: left; }
     &.r-align { text-align: right; }
 
-    @media @desktop-sml {
-      font-size: 28px;
-    }
+    @media @desktop-sml { font-size: 28px; }
+    @media @tablet, @mobile-lg, @mobile { font-size: 26px; margin-bottom: 5px; }
 }
 
 .squiggle {
@@ -538,4 +546,10 @@ span.sub-headline {
           .translateX(0);
         }//:after
     }//.l-align
+
+    @media @tablet, @mobile-lg, @mobile {
+      padding-bottom: 40px;
+
+        &:after { bottom: 15px; }
+    }//media
 }//.squiggle

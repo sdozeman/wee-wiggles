@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<link rel='shortcut icon' type='image/x-icon' href='<?php bloginfo('stylesheet_directory'); ?>/img/favicon.ico' />
 <?php wp_head(); ?>
 </head>
 
@@ -26,13 +26,14 @@
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container">
+				<span class="b1"></span>
 				<span class="site-title logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</span>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
-					<ul>
+					<ul class="menu">
 						<li><a href="#h-about" class="ico heart">About Us</a></li>
 						<li><a href="#h-bio" class="ico star">The Director</a></li>
 						<li><a href="#h-rates" class="ico clock">Hours & Rates</a></li>
@@ -44,14 +45,14 @@
 				</nav><!-- #site-navigation -->
 
 				<a class="menu-btn">
-					<div class="toggle">
-						<span class="l1"></span>
-						<span class="l1"></span>
-						<span class="l1"></span>
-					</div>
-
 					<span class="menu-text">Menu</span>
-				</a>
+					<div class="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a><!-- .menu-btn -->
 			</div><!-- .container -->
 		</header><!-- #masthead -->
 
