@@ -161,6 +161,7 @@
                &.p-foreground,
                &.p-background { .opacity(.5); }
              }//img
+             &.image-4 { min-height: 510px; }
           }//.image
 
           &.text {
@@ -188,6 +189,9 @@
           .column.image { order: 0; }
           .column.text { order: 1;}
         }//.right
-
     }//@mobile
+
+    @media @iphone {
+      .column.image.image-4 { min-height: 380px; }
+    }
 }//.image-row
