@@ -268,17 +268,18 @@
 								<div class="column hours">
 									<span class="fancy">Hours</span>
 									<p>Wee Wiggles Inc. operates from the end of August to the end of June (corresponding to the CBE traditional calendar).
-										My hours are Monday to Friday, 7:30 – 5:00. My start time can occasionally be flexible when needed.</p>
+										My hours are Monday to Friday, 7:30 – 5:00. <strong>Hours can be negotiated if needed</strong>.</p>
 								</div><!-- .column -->
 							</div><!-- .col-6 -->
 							<div class="col-6">
 								<div class="column rates">
 									<span class="fancy">Rates</span>
-									<p>I charge <strong>$950/month for full-time</strong> and <strong>$700/month for part-time</strong> care over 10 months.
+									<p>Please contact.</p>
+								<!--	<p>I charge <strong>$950/month for full-time</strong> and <strong>$700/month for part-time</strong> care over 10 months.
 										Fees are not charged over the summer, so if you were to average full-time fees over 12 months this would be less than $800 a month.</p>
 
 									<small>*Keep in mind that if the average month has 22 work days,
-										with 9.5 hours a day of care this would mean that I would be grossing $4.50 a child before taxes and expenses are calculated in.</small>
+										with 9.5 hours a day of care this would mean that I would be grossing $4.50 a child before taxes and expenses are calculated in.</small> -->
 								</div><!-- .column -->
 							</div><!-- .col-6 -->
 						</div><!-- .grid -->
