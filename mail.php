@@ -1,8 +1,8 @@
 <?php
-	$name = $_POST['c-name'];
-	$email = $_POST['c-email'];
-	$subject = $_POST['c-subject'];
-	$message = $_POST['c-message'];
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
 
 	$formcontent=" From: $name \n Message: $message";
 	$recipient = "sdozeman@gmail.com";
