@@ -324,7 +324,7 @@
 <!-- START MENU SECTION -->
 			<section id="h-menu">
 				<div class="container">
-					<span class="sub-headline">Weekly</span>
+					<span class="sub-headline">Sample</span>
 					<h2 class="squiggle headline">Menu</h2>
 
 					<div class="Rtable Rtable--5cols Rtable--collapse">

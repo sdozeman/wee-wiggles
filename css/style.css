@@ -2741,6 +2741,7 @@ footer .site-info span {
 }
 .site-content #h-avail .availability blockquote span.source {
   display: block;
+  font-size: 16px;
   margin-top: 10px;
   text-align: right;
 }
