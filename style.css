@@ -3019,6 +3019,7 @@ footer .site-info span {
   .site-content #h-rates {
     padding: 50px 0;
     background: none;
+    min-height: 1px;
   }
   .site-content #h-rates .col-6 {
     width: 100%;
