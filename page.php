@@ -274,7 +274,7 @@
 							<div class="col-6">
 								<div class="column rates">
 									<span class="fancy">Rates</span>
-									<p>Please contact.</p>
+									<p>Please <a href="#h-contact">contact</a>.</p>
 								<!--	<p>I charge <strong>$950/month for full-time</strong> and <strong>$700/month for part-time</strong> care over 10 months.
 										Fees are not charged over the summer, so if you were to average full-time fees over 12 months this would be less than $800 a month.</p>
 

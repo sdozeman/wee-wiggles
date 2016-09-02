@@ -2713,6 +2713,7 @@ footer .site-info span {
 }
 .site-content #h-avail .availability blockquote {
   padding: 20px;
+  font-size: 18px;
   position: relative;
   padding-left: 120px;
   margin-left: -100px;
@@ -2742,7 +2743,7 @@ footer .site-info span {
 }
 .site-content #h-avail .availability blockquote span.source {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 10px;
   text-align: right;
 }
@@ -3105,7 +3106,7 @@ footer .site-info span {
   font-size: 24px;
   text-align: left;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   padding-left: calc(50% + 10px);
 }
 .site-content #h-schedule #schedule-list li:before,
