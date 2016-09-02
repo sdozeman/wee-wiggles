@@ -1700,6 +1700,7 @@ fieldset[disabled] .form-control {
 textarea {
   resize: none;
   height: 230px;
+  padding: 10px 12px;
   text-align: left;
 }
 input[type="radio"][disabled],
@@ -3473,7 +3474,7 @@ footer .site-info span {
     width: 100%;
   }
   .site-content #h-contact .grid .col-6 .fl_wrap {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .site-content #h-contact .grid .col-6 .fl_wrap.tall {
     height: 230px;
