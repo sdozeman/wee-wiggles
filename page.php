@@ -21,30 +21,28 @@
 			<section id="h-hero">
 				<div class="flexslider">
 				  <ul class="slides">
-				    <li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-01.jpg) center top no-repeat; background-size: cover;">
-							<div class="container">
-								<div class="caption right">
-									<p class="sub headline">Warm, safe & engaging</p>
-									<p class="main headline">environment</p>
-								</div><!-- .caption -->
-							</div><!-- .container -->
-				    </li>
-						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-02.jpg) center top no-repeat; background-size: cover;">
-							<div class="container">
-								<div class="caption right">
-									<p class="sub headline">Learn through play </p>
-									<p class="main headline">& discovery</p>
-								</div><!-- .caption -->
-							</div><!-- .container -->
-				    </li>
-						<li style="background: url(<?php bloginfo('stylesheet_directory'); ?>/img/slide-03.jpg) center top no-repeat; background-size: cover;">
-							<div class="container">
-								<div class="caption left">
-									<p class="sub headline">Nutritious</p>
-									<p class="main headline">meals & snacks</p>
-								</div><!-- .caption -->
-							</div><!-- .container -->
-				    </li>
+						<?php if( have_rows('hero_slide') ): ?>
+
+							<?php while( have_rows('hero_slide') ): the_row();
+								// vars
+								$image = get_sub_field('background_image');
+								$primary = get_sub_field('main_headline');
+								$secondary = get_sub_field('secondary_headline');
+								$alignment = get_sub_field('caption_position');
+
+							?>
+
+								<li style="background: url(<?php echo $image; ?>) center top no-repeat; background-size: cover;">
+									<div class="container">
+										<div class="caption <?php echo $alignment; ?>">
+											<p class="sub headline"><?php echo $secondary; ?></p>
+											<p class="main headline"><?php echo $primary; ?></p>
+										</div><!-- .caption -->
+									</div><!-- .container -->
+						    </li>
+
+							<?php endwhile; ?>
+						<?php endif; ?>
 				  </ul><!-- .slides -->
 				</div><!-- .flexslider -->
 			</section><!-- #home-hero -->
@@ -600,7 +598,7 @@
 
 							<div class="col-4 ico email">
 								<p>Email</p>
-								<small><a href="mailto:hello@weewigglesinc.com" class="plain-link">hello@weewigglesinc.com</a></small>
+								<small><a href="mailto:fake@mail.com" data-mail-user="hello" data-mail-domain="@weewigglesinc.com" class="plain-link">...</a></small>
 							</div><!-- ico -->
 
 							<div class="col-4 ico clock">
