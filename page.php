@@ -29,7 +29,6 @@
 								$primary = get_sub_field('main_headline');
 								$secondary = get_sub_field('secondary_headline');
 								$alignment = get_sub_field('caption_position');
-
 							?>
 
 								<li style="background: url(<?php echo $image; ?>) center top no-repeat; background-size: cover;">
@@ -54,14 +53,27 @@
 					<div class="fgrid fgrid--gutters c-align">
 						<div class="fgrid-cell col-8">
 							<div class="flex-wrap">
-								<p class="main headline">Two full-time spots available!</p>
-								<p class="sub headline">Children aged 2-3 years for 2016/2017 school year</p>
+
+								<?php
+									if(get_field('cta_main_headline')) {
+										echo '<p class="main headline">' . get_field('cta_main_headline') . '</p>';
+									}
+
+									if(get_field('cta_secondary_headline')) {
+										echo '<p class="sub headline">' . get_field('cta_secondary_headline') . '</p>';
+									}
+								?>
 							</div><!-- .flex-wrap -->
 						</div><!-- .fgrid-cell -->
 
 						<div class="fgrid-cell col-4">
 							<div class="flex-wrap r-align c-align r-height">
-								<a href="#h-contact" class="btn lrg trans caret-r">Contact Us</a>
+
+								<?php
+									if(get_field('cta_secondary_headline')) {
+										echo '<a href="#h-contact" class="btn lrg trans caret-r">' . get_field('cta_button') . '</a>';
+									}
+								?>
 							</div><!-- .flex-wrap -->
 						</div><!-- .fgrid-cell -->
 					</div><!-- .fgrid-->
@@ -75,9 +87,11 @@
 					<span>Welcome to</span>
 					<h1 class="squiggle">Wee Wiggles</h1>
 
-					<p>Wee Wiggles Inc. is a private dayhome on a quiet street in Lake Chaparral.
-						There is a dedicated playroom in my bonus room, a separate napping area, and a fully fenced backyard with a playset and outdoor toys.
-						On my street are two parks, one of which is across the street. I have two very friendly and cuddly cats, Governor and Seamus.</p>
+					<?php
+						if(get_field('cta_secondary_headline')) {
+							echo '<p>' . get_field('intro_paragraph') . '</p>';
+						}
+					?>
 
 					<div class="block ico ppl"><h3>Low-Ratio Intake</h3></div>
 					<div class="block ico blb"><h3>Early Learning</h3></div>
@@ -101,20 +115,22 @@
 								<div class="container xsml">
 									<span class="sub-headline l-align">2016/2017</span>
 									<h2 class="squiggle l-align">Availability</h2>
-									<p>I operate Wee Wiggles Inc. from the end of August to the end of June (corresponding to the CBE traditional calendar—ideal for teachers’ families!).
-										I do not charge fees to hold spots over the summer like other dayhomes, as I take summers off.</p>
-									<p>Wee Wiggles Inc. currently has <strong>two full-time spots available for children aged 2-3 for the 2016/2017 school year</strong>.
-										I cannot provide care for school-aged children, as I currently do not offer drop off/pick-up services.
-										When the new Education Act is in effect, I will be able to care for children up to age 5. See below for when the new regulations are expected to take effect.</p>
 
-									<blockquote>
-										“Under our current School Act regulations, children must be at least four years old on or before March 1 to start kindergarten in September of the same calendar year.<br><br>
-										*Please note: The new Education Act was expected to take effect in the 2016-17 school year, but has been delayed by Alberta Education.
-										The new regulation states that starting in the 2018-19 school year, children must be at least five years old by Dec. 31, 2018 to start kindergarten in September 2018.
-										Our kindergarten calculator assumes that the Education Act will be in effect for the 2018-19 school year.”
+									<?php
+										if(get_field('cta_secondary_headline')) {
+											echo get_field('top_paragraphs');
+										}
 
-										<span class="source">via <a href="#">Calgary Board of Education</a></span>
-									</blockquote>
+										if(get_field('avail_testimonial')) {
+											echo '<blockquote>' . get_field('avail_testimonial');
+
+											if(get_field('avail_testimonial_source')){
+												echo '<span class="source">via ' . get_field('avail_testimonial_source') . '</span>';
+											}
+										}
+
+										echo '</blockquote>';
+									?>
 
 									<p>Please <a href="#h-contact">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
 								</div><!-- .container -->
@@ -132,23 +148,24 @@
 				<!-- BEGIN FIRST ROW -->
 						<div class="image-row image-right" id="target1">
 							<div class="column text">
-								<span class="sub-headline l-align">Fostering</span>
-								<h2 class="squiggle l-align headline">early-learning</h2>
 
-								<p>It is my core belief that <strong>children should learn through play and discovery</strong>.
-									As a teacher, I found class-size to be the biggest indicator of success in my classrooms.
-									As such, I will be keeping my dayhome low-ratio to maximize the amount of time I can spend with each child.
-									I strive to create lifelong learners in a <strong>warm, safe,
-									and engaging</strong> environment for children to explore their surroundings.</p>
+								<?php
+									//vars
+									$r1i = get_field('row_one_image');
+									$r1mh = get_field('row_one_large_headline');
+									$r1sh = get_field('row_one_small_headline');
+									$r1t = get_field('row_one_text');
 
-								<p>Every month we will explore a theme to do with the world around us.
-									Every week I will create activities based on the expressed interests from the week before for the children in my care.
-									Every day I will use brightwheel© to report to parents when children are checked in and out, when naps begin and end,
-									daily activities, and the type and amount of food eaten.</p>
+									if($r1sh) { echo '<span class="l-align sub-headline">' . $r1sh . '</span>'; }
+									if($r1mh) { echo '<h2 class="squiggle l-align headline">' . $r1mh . '</h2>'; }
+									if($r1t) { echo $r1t; }
+								?>
 							</div><!-- .column -->
 							<div class="column image right image-1">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-B@2x.png" class="p-background" />
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-earlylearning@2x.jpg" class="p-image" />
+
+								<?php if($r1i) { echo '<img src="' . $r1i  .'" class="p-image" />'; } ?>
+
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-01-F@2x.png" class="p-foreground" />
 							</div><!-- .column -->
 						</div><!-- .image-row -->
@@ -157,16 +174,24 @@
 				<!-- BEGIN SECOND ROW -->
 						<div class="image-row image-left" id="target2">
 							<div class="column text">
-								<h2 class="l-align headline">Nutritious</h2>
-								<span class="sub-headline squiggle l-align">meals & snacks</span>
 
-								<p>Being a former Foods teacher, I place an enormous value on nutritious meals and snacks.
-									I prepare almost all of my food from scratch and will involve children in both meal preparation and clean-up.
-									I will provide a healthy breakfast, lunch, and two snacks per day. </p>
+								<?php
+									//vars
+									$r2i = get_field('row_two_image');
+									$r2mh = get_field('row_two_large_headline');
+									$r2sh = get_field('row_two_small_headline');
+									$r2t = get_field('row_two_text');
+
+									if($r1sh) { echo '<span class="l-align sub-headline">' . $r2sh . '</span>'; }
+									if($r1mh) { echo '<h2 class="headline squiggle l-align">' . $r2mh . '</h2>'; }
+									if($r1t) { echo $r2t; }
+								?>
 							</div><!-- .column -->
 							<div class="column image left image-2">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-B@2x.png" class="p-background" />
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-earlylearning@2x.jpg" class="p-image" />
+
+								<?php if($r2i) { echo '<img src="' . $r2i  .'" class="p-image" />'; } ?>
+
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-02-F@2x.png" class="p-foreground" />
 							</div><!-- .column -->
 						</div><!-- .image-row -->
@@ -175,19 +200,25 @@
 				<!-- BEGIN THIRD ROW -->
 						<div class="image-row image-right" id="target3">
 							<div class="column text">
-								<span class="sub-headline l-align">Health</span>
-								<h2 class="squiggle l-align headline">& safety</h2>
 
-								<p><strong>Health and safety are of utmost importance to me</strong>. I will never drive with the children in my care.
-									I also will never post photos of children online or make my address freely available on the internet.
-									Only children with up-to-date vaccinations will be allowed to attend.
-									I also will be sanitizing toys weekly (at a minimum) and will ensure that children who are sick are kept or sent home.
-									Children will only be released to parents or identified emergency contacts.
-									I also have a video monitor in my playroom that records 24h of footage.</p>
+								<?php
+									//vars
+									$r3i = get_field('row_three_image');
+									$r3mh = get_field('row_three_large_headline');
+									$r3sh = get_field('row_three_small_headline');
+									$r3t = get_field('row_three_text');
+
+									if($r3sh) { echo '<span class="sub-headline l-align">' . $r3sh . '</span>'; }
+									if($r3mh) { echo '<h2 class="squiggle l-align headline">' . $r3mh . '</h2>'; }
+									if($r3t) { echo $r3t; }
+								?>
+
 							</div><!-- .column -->
 							<div class="column image right image-3">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-B@2x.png" class="p-background" />
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-health-safety@2x.jpg" class="p-image" />
+
+								<?php if($r3i) { echo '<img src="' . $r3i  .'" class="p-image" />'; } ?>
+
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-03-F@2x.png" class="p-foreground" />
 							</div><!-- .column -->
 						</div><!-- .image-row -->
@@ -236,17 +267,21 @@
 				<!-- BEGIN IMAGE ROW -->
 						<div class="image-row image-left" id="target4">
 							<div class="column text">
-								<p>I’ve always loved working with children.
-									As a child I always said that I wanted to be a babysitter when I grew up! As a teenager I ran my church’s nursery and worked at summer camps (and of course did a ton of babysitting!).
-									While obtaining my education degree I ran an after school program for children in need and volunteered in schools. When I was offered a job with the Calgary Board of Education I was thrilled!
-									Over my teaching career I taught Foods, Fashion, English Language Arts, Health, and English Language Learning. I also ran a catering club and coached soccer, badminton, and cross-country.
-									I loved my job and felt so rewarded being able to make a difference in children’s lives.</p>
-									<p>While I loved being a teacher, I come from a family of small business owners and have always had an entrepreneurial spirit.
-										After my daughter was born, I decided to take a leap of faith and open up my own dayhome to allow me to still do what I love while being my own boss.</p>
+
+								<?php
+									//vars
+									$r4i = get_field('row_four_image');
+									$r4t = get_field('row_four_text');
+
+									if($r4t) { echo $r4t; }
+								?>
+
 							</div><!-- .column -->
 							<div class="column image left image-4">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-B@2x.png" class="p-background" />
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/JessicaWatson@2x.jpg" class="p-image" />
+
+								<?php if($r4i) { echo '<img src="' . $r4i  .'" class="p-image" />'; } ?>
+
 								<span class="img-cap">Jessica Watson</span>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-F@2x.png" class="p-foreground" />
 							</div><!-- .column -->
@@ -265,19 +300,21 @@
 							<div class="col-6">
 								<div class="column hours">
 									<span class="fancy">Hours</span>
-									<p>Wee Wiggles Inc. operates from the end of August to the end of June (corresponding to the CBE traditional calendar).
-										My hours are Monday to Friday, 7:30 – 5:00. <strong>Hours can be negotiated if needed</strong>.</p>
+										<?php
+											if(get_field('har_hours')) {
+												echo get_field('har_hours');
+											}
+										?>
 								</div><!-- .column -->
 							</div><!-- .col-6 -->
 							<div class="col-6">
 								<div class="column rates">
 									<span class="fancy">Rates</span>
-									<p>Please <a href="#h-contact">contact</a>.</p>
-								<!--	<p>I charge <strong>$950/month for full-time</strong> and <strong>$700/month for part-time</strong> care over 10 months.
-										Fees are not charged over the summer, so if you were to average full-time fees over 12 months this would be less than $800 a month.</p>
-
-									<small>*Keep in mind that if the average month has 22 work days,
-										with 9.5 hours a day of care this would mean that I would be grossing $4.50 a child before taxes and expenses are calculated in.</small> -->
+										<?php
+											if(get_field('har_rates')) {
+												echo get_field('har_rates');
+											}
+										?>
 								</div><!-- .column -->
 							</div><!-- .col-6 -->
 						</div><!-- .grid -->
@@ -292,30 +329,25 @@
 					<h2 class="squiggle headline">Schedule</h2>
 
 						<ul id="schedule-list">
-							<li><span class="time-slot">7:30-8:00</span>Arrival, self-directed play</li>
-							<li><span class="time-slot">8:00-8:15</span>Wash up</li>
-							<li><span class="time-slot">8:15-8:45</span>Breakfast</li>
-							<li><span class="time-slot">8:45-9:00</span>Wash up, diaper changes</li>
-							<li><span class="time-slot">*9:00-10:00*</span>*Nap time for morning nappers*</li>
-							<li><span class="time-slot">9:00-9:30</span>Circle time</li>
-							<li><span class="time-slot">9:30-10:00</span>Craft/activity time</li>
-							<li><span class="time-slot">10:00-10:15</span>Wash up</li>
-							<li><span class="time-slot">10:15-10:45</span>AM snack</li>
-							<li><span class="time-slot">10:45-11:00</span>Wash up, diaper changes</li>
-							<li><span class="time-slot">11:00-11:45</span>Outside play</li>
-							<li><span class="time-slot">11:45-12:00</span>Wash up</li>
-							<li><span class="time-slot">12:00-12:30</span>Lunch</li>
-							<li><span class="time-slot">12:30-12:45</span>Wash up</li>
-							<li><span class="time-slot">12:45-1:00</span>Story time, diaper changes</li>
-							<li><span class="time-slot">1:00-3:00</span>Nap time</li>
-							<li><span class="time-slot">3:00-3:15</span>Wash up, diaper changes</li>
-							<li><span class="time-slot">3:15-3:45</span>PM snack</li>
-							<li><span class="time-slot">3:45-4:15</span>Self-directed play</li>
-							<li><span class="time-slot">4:15-5:00</span>Outside play and pick up</li>
+							<?php if( have_rows('schedule_list_item') ): ?>
+								<?php while( have_rows('schedule_list_item') ): the_row();
+									// vars
+									$slDesc = get_sub_field('schedule_item_description');
+									$slTime = get_sub_field('schedule_item_time');
+								?>
+
+								<?php echo '<li><span class="time-slot">' . $slTime . '</span>' . $slDesc . '</li>'; ?>
+
+								<?php endwhile; ?>
+							<?php endif; ?>
 						</ul>
 
-						<p class="note">Please note that this schedule is not set-in-stone, and will be adjusted as the day unfolds as needed.
-							Outside time is weather dependent. In inclement weather, outdoor time is replaced with indoor activity time.</p>
+						<?php
+							if(get_field('schedule_note')) {
+								echo '<p class="note">' . get_field('schedule_note') . '</p>';
+							}
+						?>
+
 				</div><!-- .container -->
 			</section><!-- .section -->
 
@@ -598,7 +630,7 @@
 
 							<div class="col-4 ico email">
 								<p>Email</p>
-								<small><a href="mailto:fake@mail.com" data-mail-user="hello" data-mail-domain="@weewigglesinc.com" class="plain-link">...</a></small>
+								<small><a href="mailto:fake@mail.com" data-mail-user="hello" data-mail-domain="weewigglesinc.com" class="plain-link">...</a></small>
 							</div><!-- ico -->
 
 							<div class="col-4 ico clock">
