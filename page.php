@@ -549,66 +549,46 @@
 				<!-- GLIDE THAT SHIT -->
 					<div class="slider-copy">
 						<div class="slider-wrap">
-							<div data-slide="1" class="service first">
-								<h2>This is<br> SPARTA</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
-								<a class="link" href="#">Find out more</a>
-							</div>
+							<?php if( have_rows('carou_slide') ): ?>
 
-							<div data-slide="2" class="service active">
-								<h2>Lorem Ipsum Stuff</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
-								<a class="link" href="#">Find out more</a>
-							</div>
+								<?php while( have_rows('carou_slide') ): the_row();
+									$carouTitle = get_sub_field('carou_headline');
+									$carouText = get_sub_field('carou_text');
+									$carouNum = get_sub_field('carou_number');
+								?>
 
-							<div data-slide="3" class="service">
-								<h2>Turkey Dinner</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
-								<a class="link" href="#">Find out more</a>
-							</div>
+									<div data-slide="<?php echo $carouNum ?>" class="service ">
+										<?php
+											echo '<h2>' . $carouTitle . '</h2>';
+											echo '<p>' . $carouText . '</p>';
+										?>
+									</div>
 
-							<div data-slide="4" class="service">
-								<h2>I don't even...</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
-								<a class="link" href="#">Find out more</a>
-							</div>
+								<?php endwhile; ?>
+							<?php endif; ?>
 
-							<div data-slide="5" class="service">
-								<h2>I don't even...</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue aliquam efficitur. Mauris aliquet nibh justo, at elementum sem malesuada ac. Curabitur id ornare dui, non vulputate ex. Suspendisse volutpat elit erat.</p>
-								<a class="link" href="#">Find out more</a>
-							</div>
 						</div><!-- .slider-wrap -->
 					</div><!-- .slider-copy -->
 
 					<div class="home-slider">
 						<div class="glide" id="carousel" style="">
 							<ul class="slides glide__track">
-								<li class="slide glide__slide">
-									<figure>
-										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals1.jpg">
-									</figure>
-								</li>
-								<li class="slide glide__slide">
-									<figure>
-										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals2.jpg">
-									</figure>
-								</li>
-								<li class="slide glide__slide">
-									<figure>
-										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals3.jpg">
-									</figure>
-								</li>
-								<li class="slide glide__slide">
-									<figure>
-										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals4.jpg">
-									</figure>
-								</li>
-								<li class="slide glide__slide">
-									<figure>
-										<img alt="" title="" src="<?php bloginfo('stylesheet_directory'); ?>/img/animals5.jpg">
-									</figure>
-								</li>
+
+								<?php if( have_rows('carou_slide') ): ?>
+
+									<?php while( have_rows('carou_slide') ): the_row();
+										$carouImage = get_sub_field('carou_image');
+										$carouTitle = get_sub_field('carou_headline');
+									?>
+
+										<li class="slide glide__slide">
+											<figure>
+												<img alt="<?php echo $carouTitle; ?>" title="<?php echo $carouTitle; ?>" src="<?php echo $carouImage; ?>">
+											</figure>
+								    </li>
+
+									<?php endwhile; ?>
+								<?php endif; ?>
 							</ul>
 
 							<div class="slider__arrows glide__arrows">

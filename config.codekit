@@ -270,6 +270,94 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/carou-img-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 156614,
+		"inputAbbreviatedPath": "\/img\/carou-img-1.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126937,
+		"inputAbbreviatedPath": "\/img\/carou-img-2.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117426,
+		"inputAbbreviatedPath": "\/img\/carou-img-3.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 127679,
+		"inputAbbreviatedPath": "\/img\/carou-img-4.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 137266,
+		"inputAbbreviatedPath": "\/img\/carou-img-5.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107919,
+		"inputAbbreviatedPath": "\/img\/carou-img-6.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 147035,
+		"inputAbbreviatedPath": "\/img\/carou-img-7.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carou-img-8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 197839,
+		"inputAbbreviatedPath": "\/img\/carou-img-8.jpg",
+		"outputAbbreviatedPath": "\/img\/carou-img-8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cta-bg-repeat.png": {
 		"fileType": 32768,
 		"ignore": 0,

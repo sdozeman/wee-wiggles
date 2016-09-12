@@ -4536,6 +4536,9 @@ html[xmlns] .flexslider .slides {
 .slider-copy .slider-wrap {
   overflow: hidden;
 }
+.slider-copy h2 {
+  font-size: 40px;
+}
 .slider-copy p {
   padding-right: 35%;
 }

@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 
+  $('.service').first().addClass('active');
 
   // ScrollTo navigation
   $(document).on("scroll", onScroll);
