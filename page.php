@@ -12,7 +12,28 @@
  * @package Wee_Wiggles
  */
 
-	get_header(); ?>
+	get_header();
+
+		//vars
+		$image = get_sub_field('background_image');
+		$primary = get_sub_field('main_headline');
+		$secondary = get_sub_field('secondary_headline');
+		$alignment = get_sub_field('caption_position');
+		$r1i = get_field('row_one_image');
+		$r1mh = get_field('row_one_large_headline');
+		$r1sh = get_field('row_one_small_headline');
+		$r1t = get_field('row_one_text');
+		$r2i = get_field('row_two_image');
+		$r2mh = get_field('row_two_large_headline');
+		$r2sh = get_field('row_two_small_headline');
+		$r2t = get_field('row_two_text');
+		$r3i = get_field('row_three_image');
+		$r3mh = get_field('row_three_large_headline');
+		$r3sh = get_field('row_three_small_headline');
+		$r3t = get_field('row_three_text');
+		$r4i = get_field('row_four_image');
+		$r4t = get_field('row_four_text');
+	?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -24,7 +45,7 @@
 						<?php if( have_rows('hero_slide') ): ?>
 
 							<?php while( have_rows('hero_slide') ): the_row();
-								// vars
+								//vars
 								$image = get_sub_field('background_image');
 								$primary = get_sub_field('main_headline');
 								$secondary = get_sub_field('secondary_headline');
@@ -150,12 +171,6 @@
 							<div class="column text">
 
 								<?php
-									//vars
-									$r1i = get_field('row_one_image');
-									$r1mh = get_field('row_one_large_headline');
-									$r1sh = get_field('row_one_small_headline');
-									$r1t = get_field('row_one_text');
-
 									if($r1sh) { echo '<span class="l-align sub-headline">' . $r1sh . '</span>'; }
 									if($r1mh) { echo '<h2 class="squiggle l-align headline">' . $r1mh . '</h2>'; }
 									if($r1t) { echo $r1t; }
@@ -176,12 +191,6 @@
 							<div class="column text">
 
 								<?php
-									//vars
-									$r2i = get_field('row_two_image');
-									$r2mh = get_field('row_two_large_headline');
-									$r2sh = get_field('row_two_small_headline');
-									$r2t = get_field('row_two_text');
-
 									if($r1sh) { echo '<span class="l-align sub-headline">' . $r2sh . '</span>'; }
 									if($r1mh) { echo '<h2 class="headline squiggle l-align">' . $r2mh . '</h2>'; }
 									if($r1t) { echo $r2t; }
@@ -202,12 +211,6 @@
 							<div class="column text">
 
 								<?php
-									//vars
-									$r3i = get_field('row_three_image');
-									$r3mh = get_field('row_three_large_headline');
-									$r3sh = get_field('row_three_small_headline');
-									$r3t = get_field('row_three_text');
-
 									if($r3sh) { echo '<span class="sub-headline l-align">' . $r3sh . '</span>'; }
 									if($r3mh) { echo '<h2 class="squiggle l-align headline">' . $r3mh . '</h2>'; }
 									if($r3t) { echo $r3t; }
@@ -268,13 +271,7 @@
 						<div class="image-row image-left" id="target4">
 							<div class="column text">
 
-								<?php
-									//vars
-									$r4i = get_field('row_four_image');
-									$r4t = get_field('row_four_text');
-
-									if($r4t) { echo $r4t; }
-								?>
+								<?php if($r4t) { echo $r4t; } ?>
 
 							</div><!-- .column -->
 							<div class="column image left image-4">
@@ -331,9 +328,9 @@
 						<ul id="schedule-list">
 							<?php if( have_rows('schedule_list_item') ): ?>
 								<?php while( have_rows('schedule_list_item') ): the_row();
-									// vars
+								//vars
 									$slDesc = get_sub_field('schedule_item_description');
-									$slTime = get_sub_field('schedule_item_time');
+							 		$slTime = get_sub_field('schedule_item_time');
 								?>
 
 								<?php echo '<li><span class="time-slot">' . $slTime . '</span>' . $slDesc . '</li>'; ?>
@@ -361,176 +358,183 @@
 					<div class="Rtable Rtable--5cols Rtable--collapse">
 
 
-<!-- BEGIN COLUMN ONE // MONDAY-->
+		<!-- BEGIN COLUMN ONE // MONDAY-->
 					  <div style="order:0;" class="Rtable-cell Rtable-cell--head first-col"><h3>Monday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-red first-col">
 							<span>Breakfast</span>
-							<ul>
-								<li>Cheerios</li>
-								<li>Strawberries</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('mon_breakfast')) {
+									echo get_field('mon_breakfast');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-yellow first-col">
 							<span>AM Snack</span>
-							<ul>
-								<li>Banana</li>
-								<li>Yogurt</li>
-							</ul>
+							<?php
+								if(get_field('mon_am_snack')) {
+									echo get_field('mon_am_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-cyan first-col">
 							<span>Lunch</span>
-							<ul>
-								<li>Healthy version of butter chicken<li>
-								<li>Rice</li>
-								<li>Cooked broccoli</li>
-								<li>Grapes</li>
-								<li>Water</li>
-							</ul>
+							<?php
+								if(get_field('mon_lunch')) {
+									echo get_field('mon_lunch');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-blue Rtable-cell--foot first-col">
 							<span>PM Snack</span>
-							<ul>
-								<li>Homemade granola bar</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('mon_pm_snack')) {
+									echo get_field('mon_pm_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell--foot -->
 
 
-<!-- BEGIN COLUMN TWO // TUESDAY-->
+		<!-- BEGIN COLUMN TWO // TUESDAY-->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Tuesday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-yellow">
 							<span>Breakfast</span>
-							<ul>
-								<li>Egg</li>
-								<li>Homemade bread</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('tues_breakfast')) {
+									echo get_field('tues_breakfast');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-cyan">
 							<span>AM Snack</span>
-							<ul>
-								<li>Applesauce with kale</li>
-								<li>Cheese</li>
-							</ul>
+							<?php
+								if(get_field('tues_am_snack')) {
+									echo get_field('tues_am_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-blue">
 							<span>Lunch</span>
-							<ul>
-								<li>Make-your-own veggie tortilla pizza</li>
-								<li>Strawberries</li>
-								<li>Water</li>
-							</ul>
+							<?php
+								if(get_field('tues_lunch')) {
+									echo get_field('tues_lunch');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-purple Rtable-cell--foot">
 							<span>PM Snack</span>
-							<ul>
-								<li>Celery with peanut butter</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('tues_pm_snack')) {
+									echo get_field('tues_pm_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell--foot -->
 
 
-<!-- BEGIN COLUMN THREE // WEDNESDAY -->
+		<!-- BEGIN COLUMN THREE // WEDNESDAY -->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Wednesday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-cyan">
 							<span>Breakfast</span>
-							<ul>
-								<li>Homemade pumpkin muffin</li>
-								<li>Banana</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('wed_breakfast')) {
+									echo get_field('wed_breakfast');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-blue">
 							<span>AM Snack</span>
-							<ul>
-								<li>Grapes</li>
-								<li>Yogurt</li>
-							</ul>
+							<?php
+								if(get_field('wed_am_snack')) {
+									echo get_field('wed_am_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-purple">
 							<span>Lunch</span>
-							<ul>
-								<li>Whole-wheat penne</li>
-								<li>Tomato & meat sauce</li>
-								<li>Blueberries</li>
-								<li>Water</li>
-							</ul>
+							<?php
+								if(get_field('wed_lunch')) {
+									echo get_field('wed_lunch');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-red Rtable-cell--foot">
 							<span>PM Snack</span>
-							<ul>
-								<li>Carrots</li>
-								<li>Homemade yogurt dill dip</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('wed_pm_snack')) {
+									echo get_field('wed_pm_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell--foot -->
 
 
-<!-- BEGIN COLUMN FOUR // THURSDAY-->
+		<!-- BEGIN COLUMN FOUR // THURSDAY-->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Thursday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-blue">
 							<span>Breakfast</span>
-							<ul>
-								<li>Cheerios</li>
-								<li>Strawberries</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('thu_breakfast')) {
+									echo get_field('thu_breakfast');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-purple">
 							<span>AM Snack</span>
-							<ul>
-								<li>Fruit smoothie</li>
-							</ul>
+							<?php
+								if(get_field('thu_am_snack')) {
+									echo get_field('thu_am_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-red">
 							<span>Lunch</span>
-							<ul>
-								<li>Egg salad sandwich</li>
-								<li>Cucumber slices with homemade yogurt dill dip</li>
-								<li>Grapes</li>
-								<li>Water</li>
-							</ul>
+							<?php
+								if(get_field('thu_lunch')) {
+									echo get_field('thu_lunch');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-yellow Rtable-cell--foot">
 							<span>PM Snack</span>
-							<ul>
-								<li>Homemade banana muffin</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('thu_pm_snack')) {
+									echo get_field('thu_pm_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell--foot -->
 
 
-<!-- BEGIN COLUMN FIVE // FRIDAY -->
+		<!-- BEGIN COLUMN FIVE // FRIDAY -->
 						<div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Friday</h3></div>
 					  <div style="order:1;" class="Rtable-cell cell-1 bg-purple">
 							<span>Breakfast</span>
-							<ul>
-								<li>Blueberry pancakes</li>
-								<li>Milk</li>
-							</ul>
+							<?php
+								if(get_field('fri_breakfast')) {
+									echo get_field('fri_breakfast');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:2;" class="Rtable-cell cell-2 bg-red">
 							<span>AM Snack</span>
-							<ul>
-								<li>Homemade granola bar</li>
-							</ul>
+							<?php
+								if(get_field('fri_am_snack')) {
+									echo get_field('fri_am_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 						<div style="order:3;" class="Rtable-cell cell-3 bg-yellow">
 							<span>Lunch</span>
-							<ul>
-								<li>Homemade chicken noodle soup with carrots</li>
-								<li>Homemade buns</li>
-								<li>Peaches</li>
-								<li>Water</li>
-							</ul>
+							<?php
+								if(get_field('fri_lunch')) {
+									echo get_field('fri_lunch');
+								}
+							?>
 						</div><!-- .Rtable-cell -->
 					  <div style="order:4;" class="Rtable-cell cell-4 bg-cyan Rtable-cell--foot">
 							<span>PM Snack</span>
-							<ul>
-								<li>Applesauce with kale</li>
-								<li>Cheese</li>
-							</ul>
+							<?php
+								if(get_field('fri_pm_snack')) {
+									echo get_field('fri_pm_snack');
+								}
+							?>
 						</div><!-- .Rtable-cell--foot -->
 					</div>
 
