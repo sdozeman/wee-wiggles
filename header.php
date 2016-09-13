@@ -32,7 +32,6 @@
 				</span>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
 					<ul class="menu">
 						<li><a href="#h-about" class="ico heart">About Us</a></li>
 						<li><a href="#h-bio" class="ico star">The Director</a></li>
@@ -53,6 +52,7 @@
 						<span></span>
 					</div>
 				</a><!-- .menu-btn -->
+
 			</div><!-- .container -->
 		</header><!-- #masthead -->
 

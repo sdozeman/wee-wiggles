@@ -228,6 +228,8 @@
     overflow: hidden;
     background-color: #b9e8de;
 
+      .fgrid > .col-5 .flex-wrap { min-height: 1200px; }
+
       .container.xsml {
         .clearfix;
         float: left;
@@ -292,7 +294,6 @@
 
         @media @tablet, @mobile-lg, @mobile {
           .container.xsml { padding: 40px 20px; }//.container
-
           p {
             font-size: 16px;
             line-height: 150%;
@@ -315,12 +316,21 @@
 
                 .source { font-size: 16px; margin-top: 0; }
           }//blockquote
+
         }//@tablet
 
         @media @mobile-lg, @mobile {
           .container.xsml { padding: 30px 20px; }
         }
       }//.availability
+
+      @media @tablet {
+        .fgrid > .col-5 .flex-wrap { min-height: 900px; }
+      }
+
+      @media @mobile-lg, @mobile {
+        .fgrid > .col-5 .flex-wrap { min-height: 400px; }
+      }
   }//#home-avail
 
 

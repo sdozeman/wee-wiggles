@@ -2677,6 +2677,9 @@ footer .site-info span {
   overflow: hidden;
   background-color: #b9e8de;
 }
+.site-content #h-avail .fgrid > .col-5 .flex-wrap {
+  min-height: 1200px;
+}
 .site-content #h-avail .container.xsml {
   float: left;
   padding-top: 50px;
@@ -2792,6 +2795,16 @@ footer .site-info span {
 @media only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
   .site-content #h-avail .availability .container.xsml {
     padding: 30px 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-content #h-avail .fgrid > .col-5 .flex-wrap {
+    min-height: 900px;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 767px), only screen and (max-width: 529px) {
+  .site-content #h-avail .fgrid > .col-5 .flex-wrap {
+    min-height: 400px;
   }
 }
 .site-content #h-additional {
