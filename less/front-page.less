@@ -247,6 +247,7 @@
 
         blockquote {
           padding: 20px;
+          font-size: 18px;
           position: relative;
           padding-left: 120px;
           margin-left: -100px;
@@ -278,10 +279,15 @@
 
             span.source {
               display: block;
-              font-size: 16px;
+              font-size: 18px;
               margin-top: 10px;
               text-align: right;
+              margin-top: -20px;
+
+                p { display: inline; }
             }//.source
+
+            + p { margin-bottom: 0; }
         }//blockquote
 
         @media @tablet, @mobile-lg, @mobile {
@@ -627,7 +633,7 @@
             font-size: 24px;
             text-align: left;
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 70px;
             padding-left: calc(~"50% + 10px");
 
               &:before, &:after {
@@ -860,7 +866,11 @@
                   }//:before
               }//.Rtable-cell
           }//.Rtable
-      }//@tablet
+      }//@mobile
+
+      @media @mobile {
+        .Rtable .Rtable-cell { padding-left: 60px; padding-right: 20px; }
+      }
   }//#h-menu
 
 
@@ -957,7 +967,7 @@
             width: 100%;
 
               .fl_wrap {
-                margin-bottom: 20px;
+                margin-bottom: 30px;
 
                   &.tall { height: 230px; margin-bottom: 40px; }
               }

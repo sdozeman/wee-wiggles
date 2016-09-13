@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 
+  $('.service').first().addClass('active');
 
   // ScrollTo navigation
   $(document).on("scroll", onScroll);
@@ -57,9 +58,9 @@ jQuery(document).ready(function($){
       /* get some values from elements on the page: */
       var $form = $( this ),
           $submit = $form.find( 'button[type="submit"]' ),
-          name_value = $form.find( 'input[name="c-name"]' ).val(),
-          email_value = $form.find( 'input[name="c-email"]' ).val(),
-          message_value = $form.find( 'textarea[name="c-mess"]' ).val(),
+          name_value = $form.find( 'input[name="name"]' ).val(),
+          email_value = $form.find( 'input[name="email"]' ).val(),
+          message_value = $form.find( 'textarea[name="message"]' ).val(),
           url = $form.attr('action');
 
       /* Send the data using post */
@@ -129,6 +130,23 @@ jQuery(document).ready(function($){
     $('.main-navigation').find('a').on('click', function(){
       closeNav();
     });
+
+
+
+    (function() {
+    	var mails = document.querySelectorAll('[data-mail-user][data-mail-domain]');
+
+      Array.prototype.forEach.call(mails, function(el) {
+      	var user    = el.dataset.mailUser;
+        var domain  = el.dataset.mailDomain;
+        var pattern =  user + '@' + domain;
+
+    		el.textContent = pattern;
+
+        if(el.getAttribute('href'))
+        	el.setAttribute('href', 'mailto:' + pattern);
+    	});
+    }());
 });
 
 

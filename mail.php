@@ -1,11 +1,11 @@
 <?php
-	$name = $_POST['c-name'];
-	$email = $_POST['c-email'];
-	$subject = $_POST['c-subject'];
-	$message = $_POST['c-message'];
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
 
 	$formcontent=" From: $name \n Message: $message";
-	$recipient = "sdozeman@gmail.com";
+	$recipient = "hello@jacquelinecrosley.com";
 	$subject = "Web form: $subject";
 	$mailheader = "From: $email \r\n";
 
@@ -13,6 +13,6 @@
 		echo "<h2>Thank you for your message!</h2>";
 	}
 	else {
-		echo "<h2>Sorry, there has been an error.</h2>";
+		echo "<h2>Sorry, there has been an error. Please refresh the page and try again.</h2>";
 	}
 ?>
