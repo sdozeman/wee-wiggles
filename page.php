@@ -151,9 +151,11 @@
 										}
 
 										echo '</blockquote>';
-									?>
 
-									<p>Please <a href="#h-contact">contact me</a> at <a href="mailt:hello@weewigglesinc.com">hello@weewigglesinc.com</a> or 403-200-2059 for more information or to schedule an interview.</p>
+										if(get_field('cta_secondary_headline')) {
+											echo get_field('bottom_paragraph');
+										}
+									?>
 								</div><!-- .container -->
 							</div><!-- .flex-wrap -->
 						</div><!-- .col-8 -->
