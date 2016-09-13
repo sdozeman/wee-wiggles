@@ -13,6 +13,6 @@
 		echo "<h2>Thank you for your message!</h2>";
 	}
 	else {
-		echo "<h2>Sorry, there has been an error.</h2>";
+		echo "<h2>Sorry, there has been an error. Please refresh the page and try again.</h2>";
 	}
 ?>

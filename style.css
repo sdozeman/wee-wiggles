@@ -3347,6 +3347,12 @@ footer .site-info span {
     background: #f7f7f7;
   }
 }
+@media only screen and (max-width: 529px) {
+  .site-content #h-menu .Rtable .Rtable-cell {
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+}
 .site-content #h-gallery {
   position: relative;
   padding: 120px 0 100px;
