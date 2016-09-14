@@ -12,7 +12,12 @@
  * @package Wee_Wiggles
  */
 
-	get_header();
+	if(is_front_page())
+	{
+		get_header('frontpage');
+	} else {
+		get_header();
+	}
 
 		//vars
 		$image = get_sub_field('background_image');
@@ -36,7 +41,7 @@
 	?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main home-page">
 
 <!-- START HERO SECTION -->
 			<section id="h-hero">
@@ -110,7 +115,7 @@
 
 					<?php
 						if(get_field('cta_secondary_headline')) {
-							echo '<p>' . get_field('intro_paragraph') . '</p>';
+							echo get_field('intro_paragraph');
 						}
 					?>
 
@@ -272,10 +277,9 @@
 				<!-- BEGIN IMAGE ROW -->
 						<div class="image-row image-left" id="target4">
 							<div class="column text">
-
 								<?php if($r4t) { echo $r4t; } ?>
-
 							</div><!-- .column -->
+
 							<div class="column image left image-4">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/director-B@2x.png" class="p-background" />
 
@@ -393,7 +397,7 @@
 									echo get_field('mon_pm_snack');
 								}
 							?>
-						</div><!-- .Rtable-cell--foot -->
+						</div><!-- .Rtable-cell-foot -->
 
 
 		<!-- BEGIN COLUMN TWO // TUESDAY-->
@@ -429,7 +433,7 @@
 									echo get_field('tues_pm_snack');
 								}
 							?>
-						</div><!-- .Rtable-cell--foot -->
+						</div><!-- .Rtable-cell-foot -->
 
 
 		<!-- BEGIN COLUMN THREE // WEDNESDAY -->
@@ -465,7 +469,7 @@
 									echo get_field('wed_pm_snack');
 								}
 							?>
-						</div><!-- .Rtable-cell--foot -->
+						</div><!-- .Rtable-cell-foot -->
 
 
 		<!-- BEGIN COLUMN FOUR // THURSDAY-->
@@ -501,7 +505,7 @@
 									echo get_field('thu_pm_snack');
 								}
 							?>
-						</div><!-- .Rtable-cell--foot -->
+						</div><!-- .Rtable-cell-foot -->
 
 
 		<!-- BEGIN COLUMN FIVE // FRIDAY -->
@@ -537,7 +541,7 @@
 									echo get_field('fri_pm_snack');
 								}
 							?>
-						</div><!-- .Rtable-cell--foot -->
+						</div><!-- .Rtable-cell-foot -->
 					</div>
 
 				</div><!-- .container -->
@@ -645,7 +649,7 @@
 								<div class="col-6">
 									<div class="fl_wrap tall">
 										<label class="fl_label required" for="c-mess">Message</label>
-										<textarea id="c-mess" class="fl_input" name="message" value="" required></textarea>
+										<textarea id="c-mess" class="fl_input" name="message" required></textarea>
 									</div><!-- fl_wrap -->
 								</div><!-- .col-6 -->
 							</div><!-- .grid -->
